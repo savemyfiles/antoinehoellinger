@@ -1,0 +1,269 @@
+/* About Page */
+
+.aboutContainer {
+    display: flex;
+    gap: 70px;
+    align-content:center;
+}
+
+
+.aboutImg {
+    width: 1200px;
+    align-content: center;
+    background-image: url("../../assets/antoine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px;
+}
+
+.aboutDescription h2 {
+    padding: 0px !important;
+}
+
+.aboutDescription {
+    display: inline-flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+    .aboutDescription h4 {
+        font-size: 150%;
+        color:#14f3db;
+    }
+
+.educationAside h4 {
+    color: #14f3db;
+}
+
+.underligned {
+    border-bottom: solid 2px #14f3db;
+    padding-bottom: 40px;
+}
+
+    .underligned a:hover {
+        color: #9DEFF4;
+    }
+
+.aboutContainerText {
+    display: flex;
+    padding-top: 30px;
+    gap: 100px;
+}
+
+
+.aboutContainerDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutButton {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    margin-top: 80px;
+}
+
+.SocialIcon {
+    font-size: 200%;
+    color:black;
+}
+    .SocialIcon:hover {
+        color: #14f3db;
+    }
+
+    .aboutSocial {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+}
+
+        .aboutSocial svg {
+            color: white;
+        }
+
+
+    .aboutSocial::before {
+        display: flex;
+        align-self: center;
+        background-color: #14f3db;
+        content: '';
+        height: 2px;
+        margin-right: 23px;
+        width: 80px;
+    }
+
+.aboutButton ul {
+    font-size: 150%;
+    align-self: center;
+}
+
+.aboutBtn {
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+/* EDUCATION SECTION */
+
+.education_main {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 0 100px;
+}
+
+.education_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.education_card {
+    padding: 10px 10px 10px 50px;
+    margin-left: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    border-radius: 15px;
+    border: 3px #14f3db solid;
+}
+
+    .education_card:hover {
+        cursor: pointer;
+        transform: translateY(-20px);
+    }
+
+    .education_card a:hover {
+        color: #9DEFF4;
+    }
+
+    .education_card:hover {
+        transform:translate(20px, -10px)
+    }
+
+        .education_card:hover h3 {
+            color: #14f3db !important;
+        }
+
+        .education_card h3 {
+            color: black !important;
+        }
+
+
+.educationAside {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 500px;
+    background: #1C1C1C;
+    border-radius: 15px;
+    gap: 30px;
+    flex-grow: 1;
+    color: white;
+    box-shadow: -0.3rem 0 1rem #000;
+}
+
+
+    .educationAside h3 {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .educationAside h4 {
+        font-size: 120%;
+    }
+
+    .educationAside p {
+        font-size: 130%;
+    }
+
+.educationIcon {
+    color: white;
+    font-size: 3.5em;
+    width: auto;
+    margin-top: 60px;
+    animation: 1s alternate-reverse infinite;
+    animation-name: Arrow;
+}
+
+.responsive {
+    display:none;
+    color:black;
+    text-decoration:none;
+}
+
+@keyframes Arrow {
+    from {
+        transform: rotate(30deg);
+        margin-left: 50px;
+    }
+
+    to {
+        transform: rotate(0deg);
+        margin-left: 0px;
+    }
+}
+
+@keyframes educ {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#mastertwo::before, #masterone::before, #ceasure::before, #bachelor::before, #dut::before, #bac::before {
+    position: absolute;
+    border-top: 3px #14f3db solid;
+    padding-top: 10px;
+    height: 2px;
+    margin-left: -110px;
+    width: 80px;
+    color: white;
+}
+
+#mastertwo::before {
+    content: '2019 - 2020';
+}
+
+#masterone::before {
+    content: '2017 - 2018';
+}
+
+#ceasure::before {
+    content: '2018 - 2019';
+}
+
+#bachelor::before {
+    content: '2017 - 2018';
+}
+
+#dut::before {
+    content: '2015 - 2017';
+}
+
+#bac::before {
+    content: '2014 - 2015';
+}
+
+.educationAside a {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #00ffff;
+    text-align: center;
+    font-size: 120%;
+}

@@ -1,0 +1,595 @@
+/* Services */
+
+.containerSkills {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+
+.containerSkills h3 {
+    width: 100%;
+}
+
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: space-around;
+}
+
+    .tools img {
+        max-width: 80%;
+        max-height: 100%;
+    }
+
+.tools_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.tools_card_img {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+}
+
+.tools_card:hover .tools_card_img img {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.tools_card:hover .tools_card_text {
+    border-bottom: 3px solid #14f3db;
+}
+
+
+.tools_card:hover ~ .card_card_img img {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+
+
+.card:hover ~ .card_card_img img {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.tools_card_text {
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 10px;
+}
+
+
+.skills h3 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.subskills {
+    min-width: 40%;
+}
+
+.bar_skill {
+    position: relative;
+    border: 2px solid #14f3db;
+    border-radius: 20px;
+    margin: 10px 0 30px 0;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+.bar_skill div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #14f3db;
+}
+
+
+
+#html-bar-70 {
+    animation: html-fill-70 2s forwards;
+}
+
+#html-bar-80 {
+    animation: html-fill-80 2s forwards;
+}
+
+
+#html-bar-90 {
+    animation: html-fill-90 2s forwards;
+}
+
+#html-bar-95 {
+    animation: html-fill-95 2s forwards;
+}
+
+#html-bar-100 {
+    animation: html-fill-100 2s forwards;
+}
+
+
+@keyframes html-fill-70 {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes html-fill-80 {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes html-fill-90 {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes html-fill-95 {
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes html-fill-100 {
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+/* Services Section */
+
+.ServicesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.sub_ServicesContainer {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.ServiceItems {
+    display: flex;
+    box-shadow: -0.3rem 0 1rem #000;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: #1C1C1C;
+    padding: 30px;
+    height: 450px;
+    flex-wrap: wrap;
+    border: solid 5px transparent;
+}
+
+    .ServiceItems li, .circle li {
+        list-style: inside;
+        color: white;
+        padding: 5px 0px;
+    }
+
+        .ServiceItems li::before {
+            background-color: white;
+        }
+
+
+.servicesIcons {
+    font-size: 380%;
+    color: #14f3db;
+    margin: 10px 0px;
+}
+
+    .ServiceItems h3 {
+        padding: 5px 0px;
+    }
+
+
+    .ServiceItems:hover {
+        border-bottom: solid 5px #14f3db;
+    }
+
+/* Previous Demain */
+
+.experience {
+    justify-content: center;
+    top: 60px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    background: #1C1C1C;
+    padding: 20px;
+    top:40px;
+}
+
+.card p {
+    padding:35px 0px 20px 0px;
+}
+
+
+    .card:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease-out;
+        cursor:pointer;
+    }
+
+        .card:hover ~ .card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        }
+
+    .card h4 {
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+        padding-top: 10px;
+    }
+
+    .card h3 {
+        padding-top: 10px;
+    }
+
+
+.bar {
+    position: absolute;
+    top: 185px;
+    left: 20px;
+    height: 5px;
+    width: 100px;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 130%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #14f3db;
+    transition: 0.6s ease-out;
+}
+
+.filledbar_half {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #14f3db;
+    transition: 0.6s ease-out;
+}
+
+.card:hover i {
+    color: #14f3db;
+    transition: 0.4s ease-out;
+}
+
+
+.card:hover .filledbar {
+    width: 130%;
+    transition: 0.4s ease-out;
+}
+
+.card:hover .filledbar_half {
+    width: 90%;
+    transition: 0.4s ease-out;
+}
+
+.circle {
+    position: absolute;
+    top: 180px;
+    padding-right: 20px;
+}
+
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+
+
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+
+
+@media only screen and (max-width: 1400px ) {
+
+}
+
+
+@media only screen and (max-width: 1200px ) {
+    .containerSkills .skills div, .skills, .tools {
+        width: 100%;
+        max-width: unset;
+        min-width:unset;
+    }
+
+    .containerSkills {
+        justify-content: unset;
+        width:100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px ) {
+
+}
+
+@media only screen and (max-width: 992px ) {
+
+}
+
+@media only screen and (max-width: 768px ) {
+
+}
+
+@media only screen and (max-width: 576px ) {
+
+}
+
+
+.detailsOn {
+    animation: detailsOnComing 2s forwards;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100px;
+    z-index: 900;
+    padding: 0 80px;
+    border-radius: 15px;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+    .detailsOn container, .detailsOn h1, .detailsOn h2 {
+        animation: detailsOnContent 2s forwards;
+    }
+
+@keyframes detailsOnContent {
+
+    0% {
+        opacity:0;
+        width: 0px;
+    }
+
+    45% {
+        opacity: 0;
+        width: 90%;
+    }
+
+    99% {
+        opacity: 1;
+        width: 100%;
+    }
+
+}
+
+    @keyframes detailsOnComing {
+        0% {
+        top: calc(100% + 100px);
+        width: 0px;
+        height: calc(100% - 20px);
+        overflow-y: hidden;
+    }
+
+    30% {
+        background: black;
+        height: calc(100% - 150px);
+        top: 100px;
+        width: 0px;
+        overflow-y: hidden;
+    }
+
+    60% {
+        background: black;
+        height: calc(100% - 150px);
+        top: 100px;
+        width: calc(100% - 200px);
+        overflow-y: hidden;
+    }
+
+    100% {
+        overflow-y: auto;
+        background: black;
+        height: calc(100% - 150px);
+        top: 100px;
+        width: calc(100% - 200px);
+    }
+
+    }
+
+
+.detailsOff {
+    display:none;
+}
+
+.Exit {
+    position:absolute;
+    right:60px;
+    font-size:200%;
+    cursor:pointer;
+    top:20px;
+    color:white;
+}
+
+.container {
+    display:flex;
+    gap: 80px;
+    align-items:center;
+    padding: 50px 0;
+   }
+
+.descriptionLeft {
+    display: flex;
+    height: 400px;
+    min-width: 400px;
+}
+
+.descriptionRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    color:white;
+}
+
+.detailsOn h1 {
+    font-size: 70px !important;
+}
+
+.detailsOn h2 {
+    font-size: 30px !important;
+}
+
+    .descriptionRight p {
+        font-size:20px;
+    }
+
+    .descriptionRight ul {
+        padding: 20px 0;
+        padding-left: 40px;
+    }
+
+    .descriptionRight a {
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: #00ffff;
+        align-items: center;
+        text-align:center;
+        font-size: 120%;
+        margin-top: 40px;
+        width:350px;
+    }
+
+        .descriptionRight a:hover, .descriptionRightTwo a:hover {
+            background: white;
+            color: #14f3db;
+        }
+
+.aoff {
+    padding: 0 !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+    font-size:100% !important;
+}
+
+
+    .descriptionRight li {
+        list-style: circle;
+    }
+
+
+
+.descriptionRightTwo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.descriptionLeftTwo {
+    background-image: url("https://via.placeholder.com/500");
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+
+    .descriptionRightTwo li, .descriptionRightTwo p {
+        font-size: 20px;
+    }
+
+
+.descriptionRightTwo a {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #00ffff;
+    align-items: center;
+    font-size: 120%;
+    margin: 40px 0;
+    width: 350px;
+    text-align: center;
+}
+
+
+.descriptionRightTwo li {
+    list-style: circle;
+}
+
+#it {
+    background: center / contain no-repeat url('../../assets/images/pragmantic.png');
+    }
+
+
+#worldtour {
+    background: center / contain no-repeat url('../../assets/images/worldtour.jpg')
+}
+
+#dreamforce {
+    background: center / contain no-repeat url('../../assets/images/dreamforce.jpg')
+}
+
+#homepartner {
+    background: center / contain no-repeat url('../../assets/images/logoHomePartner.png')
+}
+
+#disney {
+    background: center / contain no-repeat url('../../assets/images/disney.png')
+}

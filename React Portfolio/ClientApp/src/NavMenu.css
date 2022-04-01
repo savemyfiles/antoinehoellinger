@@ -1,0 +1,255 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.navbar {
+    height: 90px;
+    background: transparent;
+    position: absolute;
+    margin-top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    padding: 0 10%;
+    align-content: center;
+    justify-content: space-between;
+    background-image: linear-gradient( to bottom, black, transparent);
+}
+
+.IconBack {
+    background: #14f3db;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.Icon {
+    font-size:180%;
+}
+
+.navbar ul {
+    align-items: center;
+    align-self: center;
+}
+
+.menu {
+    display:flex;
+    gap:10px;
+}
+
+.menuOpen {
+    animation: menuOpen 1s forwards;
+}
+
+@keyframes menuOpen {
+    from {
+        opacity: 0;
+        margin-top: calc(100% - 299px);
+            }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menuInit {
+    display:none;
+}
+
+.menuClose {
+    animation: menuClose 2s forwards;
+}
+
+@keyframes menuClose {
+    from {
+        opacity: 1;
+        margin-top: 0px;
+    }
+
+    to {
+        opacity: 0;
+        margin-top: -100% ;
+    }
+}
+
+
+
+.overlay {
+    height: auto;
+    position: fixed; /* Stay in place */
+    z-index: 998; /* Sit on top */
+    right: -10px;
+    top: 140px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    padding: 0 10%;
+}
+
+.overlay ul {
+    gap: 40px;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    font-size:140%;
+}
+
+    .overlay ul li a {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+.overlay ul li a:hover p {
+    animation: .5s textMenuOn forwards;
+}
+
+        .overlay ul li a:hover .IconBack {
+            transform: rotate(10deg);
+            color: white;
+        }
+
+        .overlay ul li a p {
+            transform: translateX(120px);
+            opacity: 0;
+            padding: 5px 20px;
+            background: #14f3db;
+            color:white;
+            border-radius: 15px;
+            width: 150px;
+            text-align: center
+        }
+
+@keyframes textMenuOn  {
+    from {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.overlayon {
+    animation: on 1s forwards;
+}
+
+.nav-links {
+    color: black;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.subline {
+    background-color: #14f3db;
+    height: 10px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 180px;
+    color: #14f3db;
+    padding: 0;
+    animation: come 2s forwards;
+    border-radius: 15px;
+}
+
+
+    .subline::before {
+        width: 25px;
+        content: "";
+        height: 10px;
+        background-color: black;
+        animation: bar 2s infinite linear alternate;
+        border-radius: 15px;
+    }
+
+@keyframes come {
+    from {
+        width: 0px;
+    }
+
+    to {
+    }
+}
+
+@keyframes bar {
+    from {
+    }
+
+    to {
+        transform: translateX(+160px)
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+
+
+.pragmantic_button {
+    background-color: #f1712e;
+    padding: 7px 30px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.partners {
+    background-color: grey;
+    font-size: 11px;
+    display: flex;
+    align-self: center;
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 3px 2px 1px #2B2B2B;
+}
+
+.pragmantic_button:hover {
+    background-color: #ffa675;
+    transform: translateX(10px);
+    transition: 0.4s ease-out;
+}
+
+    .pragmantic_button:hover .partners {
+        opacity: 0.8;
+    }
+
+
+.pragmantic_button a {
+    color: white;
+}
+
+.rightMenu {
+    align-items:center;
+    display:flex;
+    gap:50px;
+}

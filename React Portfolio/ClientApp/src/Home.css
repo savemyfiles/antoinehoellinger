@@ -1,0 +1,154 @@
+ul, li {
+    list-style:none;
+}
+
+ol, ul, dl {
+    margin: 0;
+    padding:0;
+}
+
+.hero {
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    padding:0px 0px 40px 0px;
+}
+
+.hero h1 {
+    font-size:700%;
+    display:inline;
+
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0 60px;
+    margin: 0;
+    gap:10px;
+    z-index: 10;
+    text-align:center;
+}
+
+.socialBlock {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 150%;
+    z-index: 10;
+}
+
+.socialBlock ul {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+}
+
+.heroBackground {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 30px;
+}
+
+.lang {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    font-size: 150%;
+    z-index: 10;
+}
+
+.HomeButton {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #00ffff;
+    align-items: center;
+    font-size: 150%;
+    margin-top: 80px;
+    }
+
+    .HomeButton:hover {
+        animation: Home .7s forwards;
+    }
+
+@keyframes Home {
+    from {
+        padding-left: 0px;
+    }
+
+    to {
+        padding-left: 50px;
+    }
+}
+
+
+.HomeButton:hover .IconHomeButton {
+    animation: HomeIcon .7s forwards;
+    display: block;
+    color:white;
+}
+
+.HomeButton:hover .TextHomeButton {
+    animation: HomeText 1s forwards;
+    color: white;
+}
+
+@keyframes HomeIcon {
+    from {
+        opacity: 0;
+        transform: translateX(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-20px)
+    }
+}
+
+@keyframes HomeText {
+    from {
+    }
+
+    to {
+    }
+}
+
+.IconHomeButton {
+    transform: translateX(20px) ;
+    opacity: 0;
+    display:none;
+}
+
+
+.TextHomeButton {
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+/* ---- tsparticles container ---- */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #323031;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+    .logo img {
+        width:80px;
+    }

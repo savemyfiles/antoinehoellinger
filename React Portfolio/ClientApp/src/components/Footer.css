@@ -1,0 +1,43 @@
+footer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    color:white;
+}
+
+a {
+    color:white;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.footerSocial::before {
+    display: flex;
+    align-self: center;
+    background-color: #14f3db;
+    content: '';
+    height: 2px;
+    margin-right: 23px;
+    width: 80px;
+}
+
+.FooterIcon {
+    font-size : 130%;
+    color:white;
+}
+
+    .FooterIcon:hover {
+        color: #14f3db;
+    }
+
+.leftMenu {
+    display:flex;
+}

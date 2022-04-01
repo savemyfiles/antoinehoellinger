@@ -1,0 +1,114 @@
+/* form */
+.form {
+    width:40%;
+}
+
+    .form input {
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 2px #14f3db;
+        padding: 20px 5px;
+        margin-bottom: 25px;
+        font-size: 150%;
+        color: white;
+    }
+
+.form_btn {
+    text-align: left;
+    margin-top: 60px;
+}
+    
+.form_content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.form_btn input {
+    border: solid 2px #14f3db;
+    padding: 10px 80px;
+    border-radius: 25px;
+    background: linear-gradient(to left, transparent 50%, #14f3db 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: white;
+}
+
+    .form_btn input:hover {
+        background-position: left;
+        cursor: pointer;
+        color:black;
+    }
+
+@keyframes fill {
+    from {
+        background-color: none;
+    }
+
+    to {
+        background-color: #14f3db;
+    }
+}
+
+.contact_items {
+    display: flex;
+    gap: 100px;
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+
+.main_contact_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    gap: 20px;
+}
+
+    .contact_details li {
+        display: flex;
+        align-items:center; 
+        gap:30px;
+        justify-content:left;
+            }
+
+    .contact_details ul {
+        display: flex;
+        flex-direction:column;
+    }
+
+
+.IconContact {
+    font-size:40px;
+    display:flex;
+    color:white;
+}
+
+.contact_description {
+    padding:20px 0px 20px 20px;
+    border-left : solid 2px #14f3db;
+}
+
+
+.contact_description p{
+    display: inline;
+}
+
+.contact_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle_contact {
+    font-size: 20px;
+    margin-bottom: 20px;
+}

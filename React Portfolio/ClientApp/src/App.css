@@ -1,0 +1,281 @@
+html {
+    overflow-x: hidden;
+}
+
+#root {
+    background-color: #323031;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    }
+
+input:focus {
+    outline: none;
+}
+
+.off {
+    display:none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+    width: 1400px;
+    margin: auto;
+    gap: 60px;
+}
+
+.main h1 {
+    text-align:center;
+    padding: 20px 0;
+    text-transform:uppercase;
+    font-size:90px;
+    color:white;
+}
+
+    .main h2 {
+        padding: 40px 0px;
+        font-size: 60px;
+        color: white;
+        z-index: 100;
+    }
+
+    .main p {
+        color: white;
+    }
+
+    .main h3 {
+        color: white;
+    }
+
+    a, button {
+       cursor:pointer;
+    }
+
+
+@media only screen and (max-width: 1400px ) {
+    .main {
+        width: 1200px;
+    }
+
+    .education_main {
+        gap: 60px;
+    }
+
+    .heroBackground {
+        text-align: center;
+    }
+
+}
+  
+
+@media only screen and (max-width: 1200px )  {
+    .main {
+        width:960px;
+    }
+
+    .educationAside {
+        max-width: 400px;
+    }
+
+    .aboutContainer, .aboutContainerText {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .aboutButton, .aboutContainerDescription {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .aboutImg {
+        height: 450px;
+        width:350px;
+        margin: 0 80px;
+        background-position: top center;
+        margin-top: 100px;
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 992px ) {
+    .main {
+        width: 720px;
+    }
+
+    .contact_details {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .education_main {
+        padding:0;
+    }
+
+    .education_card {
+        width: 250px;
+    }
+
+    .education_container {
+
+        align-items:center;
+    }
+
+
+}
+
+@media only screen and (max-width: 850px ) {
+    .main h1 {
+     font-size: 60px;
+    }
+
+    .main h2 {
+        font-size: 40px;
+        text-align:center;
+    }
+
+    .main {
+        width: 540px;
+    }
+
+    .educationAside {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .education_card {
+        width: 100%;
+    }
+
+    .education_main {
+        padding: 0 0px 0 80px;
+    }
+
+    .aboutDescription h4 {
+       font-size: 20px;
+    }
+
+    .aboutDescription h2 {
+        font-size: 30px;
+    }
+
+    .aboutDescription p {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 576px ) {
+    .main {
+        width: 85%;
+    }
+
+    .aboutImg {
+        height: 250px;
+    }
+
+    .aboutContainer div {
+        width: 100%;
+    }
+
+    .aboutButton {
+        flex-wrap:wrap;
+        gap:50px;
+    }
+
+    .aboutSocial {
+        justify-content:center;
+    }
+
+    .aboutContainerText {
+        gap : 30px;
+    }
+
+    .aboutDescription {
+        padding-bottom: 20px;
+    }
+
+    .aboutImg {
+        margin-top: 0px;
+    }
+
+    }
+
+
+p {
+    margin-bottom:unset;
+}
+
+a:hover {
+    color: #14f3db;
+    text-decoration:none;
+}
+
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    color: #444;
+    background: #fff;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+/* ---- tsparticles container ---- */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #323031;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.github {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0 12px 6px 12px;
+    border: 1px solid #000;
+}
+
+    .github a:hover,
+    .github a:link,
+    .github a:visited,
+    .github a:active {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .github img {
+        height: 30px;
+    }
+
+    .github #gh-project {
+        font-size: 20px;
+        padding-left: 5px;
+        font-weight: bold;
+        vertical-align: bottom;
+    }
