@@ -14,11 +14,6 @@ export class contact extends Component {
                     <title>Antoine HOELLINGER | Contact</title>
                 </Helmet>
 
-                <div className="title">
-                    <h1>Contact</h1>
-                    <div className="subline"></div>
-                </div>
-
                 <Form />
 
 

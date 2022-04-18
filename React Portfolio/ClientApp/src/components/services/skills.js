@@ -6,20 +6,30 @@ import PowerBi from '../../assets/powerbi.png';
 import Tableau from '../../assets/tableau.png';
 import Web from '../../assets/web.png';
 import Zendesk from '../../assets/zendesk.png';
+import { useTranslation } from "react-i18next";
 
 
 
-class Skills extends React.Component {
-    render() {
-        return (
+function Skills(props) {
+
+    const { t, i18n } = useTranslation();
+
+    return (
+
+        <>
+           <div className="title">
+                <h1>{t("Mes services")}</h1>
+                <div className="subline"></div>
+            </div>
+
             <div className="containerSkills">
 
                 <div className="skills">
                     <div className="subskills">
-                        <h3>Compétences</h3>
+                        <h3>{t('Compétences')}</h3>
 
                         <div className="details">
-                            <span><p>Appétence IT</p></span>
+                            <span><p>{t('Appétence IT')}</p></span>
                             <span><p>100%</p></span>
                         </div>
                         <div className="bar_skill">
@@ -28,7 +38,7 @@ class Skills extends React.Component {
 
 
                         <div className="details">
-                            <span><p>Gestion et Suivi de Portefeuille projets</p></span>
+                            <span><p>{t('Gestion et Suivi de Portefeuille projets')}</p></span>
                             <span><p>95%</p><p>
                             </p></span></div>
                         <div className="bar_skill">
@@ -36,7 +46,7 @@ class Skills extends React.Component {
                         </div>
 
                         <div className="details">
-                            <span><p>REPORTING &amp; DOCUMENTATION DES PROJETS</p></span>
+                            <span><p>{t('REPORTING &amp; DOCUMENTATION DES PROJETS')}</p></span>
                             <span><p>95%</p></span>
                         </div>
                         <div className="bar_skill">
@@ -44,7 +54,7 @@ class Skills extends React.Component {
                         </div>
 
                         <div className="details">
-                            <span><p>Cadrage &gt; Test &gt; Recette &gt; MEP de logiciels</p></span>
+                            <span><p>{t('Cadrage &gt; Test &gt; Recette &gt; MEP de logiciels')}</p></span>
                             <span><p>90%</p></span>
                         </div>
                         <div className="bar_skill">
@@ -52,7 +62,7 @@ class Skills extends React.Component {
                         </div>
 
                         <div className="details">
-                            <span><p>Gestion de base de données</p></span>
+                            <span><p>{t('Gestion de base de données')}</p></span>
                             <span><p>80%</p></span>
                         </div>
                         <div className="bar_skill">
@@ -60,7 +70,7 @@ class Skills extends React.Component {
                         </div>
 
                         <div className="details">
-                            <span><p>Appétence marketing</p></span>
+                            <span><p>{t('Appétence marketing')}</p></span>
                             <span><p>70%</p></span>
                         </div>
                         <div className="bar_skill">
@@ -73,7 +83,7 @@ class Skills extends React.Component {
 
                 <div className="tools">
 
-                   <h3>Outils maitrisés</h3>
+                    <h3>{t('Outils maitrisés')}</h3>
 
                     <div className="tools_card">
                         <div className="tools_card_img">
@@ -125,7 +135,7 @@ class Skills extends React.Component {
                             <a href="" target="blank_"><img src={ Web }/></a>
             </div>
                                                 <div className="tools_card_text">
-                                                    <p>DEVELOPPEMENT WEB</p>
+                                               <p>{t('Développeur web')}</p>
                                                 </div>
                                             </div>
 
@@ -141,9 +151,10 @@ class Skills extends React.Component {
 
 
 
-                                        </div>
+            </div>
+            </>
         )
     }
-}
+
 
 export default Skills

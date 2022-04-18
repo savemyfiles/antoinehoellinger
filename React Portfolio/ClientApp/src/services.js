@@ -17,11 +17,6 @@ export class services extends Component {
                     <title>Antoine HOELLINGER | Services</title>
                 </Helmet>
 
-                <div className="title">
-                    <h1>Mes services</h1>
-                    <div className="subline"></div>
-                </div>
-
                 < Skills />
                 < Services />
                 < Experience />

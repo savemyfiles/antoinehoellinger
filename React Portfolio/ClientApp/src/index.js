@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import "./i18n";
 
 
 
@@ -26,7 +27,3 @@ if (document.getElementById('email') != null) {
 if (document.getElementById('phone') != null) {
     document.getElementById('phone').innerHTML = "06 63 79 46 13".split("").reverse().join("");
 }
-
-
-
-

@@ -2,6 +2,7 @@
 import { Helmet } from 'react-helmet';
 import MySelf from './components/about/myself';
 import Education from './components/about/education'
+import Review from './components/about/review'
 import './components/about/about.css'
 
 export class about extends Component {
@@ -20,12 +21,8 @@ export class about extends Component {
         
             <div className="main">
 
-                <div className="title">
-                <h1>A propos</h1>
-                        <div className="subline"></div>
-                </div>
-
                 < MySelf />
+                < Review />
                 < Education />
 
                 </div>

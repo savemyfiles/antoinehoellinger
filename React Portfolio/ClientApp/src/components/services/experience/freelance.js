@@ -5,6 +5,8 @@ class Freelance extends React.Component {
 
         return (
             <>
+                <h1>Mon Experience en Start-up</h1>
+                <h2>Stage dans un réseau de franchises national pour améliorer la visibiltié digitale</h2>
             <div className="container">
                     <div className="descriptionLeft" id="it" >
                     </div>
@@ -29,7 +31,7 @@ class Freelance extends React.Component {
                     <li>Exploitation et mises à jour du CRM et du site web</li>
                     <li>Rédaction de spécifications pour l'équipe commerciale et technique pour la feuille de route de transformation incluant l'entrepôt de données, les outils omnicanaux, la BI.</li>
                         </ul >
-                        <a href="https://www.pragmantic.biz/">Pour en savoir plus</a>
+                        <a className="button" href="https://www.pragmantic.biz/">En savoir plus</a>
 
                 </div>
                     </div>
@@ -44,7 +46,7 @@ class Freelance extends React.Component {
                         <h4>Paris | 29-03-2022</h4>
                         <p>Grand événement annuel en France, le Salesforce World Tour Paris. Pour vous faire profiter au maximum et personnaliser votre programme, nous proposons plusieurs conférences plénières. Celles-ci aborderont les grands enjeux de votre business : tendances du BtoC, du BtoB, les défis d’une entreprise en hypercroissance ou encore les priorités stratégiques des grands groupes</p>
                     </div>
-                    <a href="https://www.salesforce.com/fr/events/salesforce-world-tour-paris-2022/?dysig_tid=e7aaf5c37a664761a9ee96c441b601fd">Pour en savoir plus</a>
+                        <a className="button" href="https://www.salesforce.com/fr/events/salesforce-world-tour-paris-2022/?dysig_tid=e7aaf5c37a664761a9ee96c441b601fd">En savoir plus</a>
                     </div>
 
                     <div className="descriptionLeftTwo" id="worldtour" >
@@ -61,7 +63,7 @@ class Freelance extends React.Component {
                         <h4>Paris</h4>
                         <p>Rediffusion de l'évennement Salesforce à Paris. Dreamforce est un événement annuel de quatre jours qui rassemble l'ensemble de la communauté Salesforce. Il s'agit d'une expérience qui célèbre les pionniers et la réussite des clients. Dreamforce est l'endroit où les pionniers du monde entier se réunissent pour partager leurs histoires, leurs réussites et apprendre les uns des autres. En général, Dreamforce a lieu pendant l'automne, de septembre à novembre à San Francisco, en Californie, sur plusieurs sites. ( source : <a className="aoff" href="https://www.blurec.fr/blog/2021/05/dreamforce-levenement-annuel-de-salesforce">blurec.fr</a> )</p>
                     </div>
-                    <a href="https://www.salesforce.com/plus/experience/Dreamforce_2021/">Pour en savoir plus</a>
+                        <a className="button" href="https://www.salesforce.com/plus/experience/Dreamforce_2021/">En savoir plus</a>
 
 
                 </div>

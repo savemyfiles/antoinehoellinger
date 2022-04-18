@@ -12,6 +12,9 @@ class Tourism extends React.Component {
         const { containerStyle } = styles;
 
         return (
+                        <>
+                <h1>Mon Experience en Start-up</h1>
+                <h2>Stage dans un réseau de franchises national pour améliorer la visibiltié digitale</h2>
             <div className="container">
                 <div className="descriptionLeft" id="disney">
                 </div>
@@ -25,9 +28,10 @@ class Tourism extends React.Component {
                         <li>Formation de 450 utilisateurs.</li>
                         <li>Gérer la relation entre les services fonctionnels et techniques.</li>
                     </ul>
-                    <a href='https://www.disneylandparis.com'> En apprendre plus sur l'entreprise</a>
+                    <a  className="button" href='https://www.disneylandparis.com'> En apprendre plus sur l'entreprise</a>
                 </div>
-            </div>
+                </div>
+                </>
         )
     }
 }

@@ -6,6 +6,14 @@
     align-content:center;
 }
 
+.color {
+    color:#14f3db;
+}
+
+.pragLink {
+    color: #f1712e;
+    font-weight:bold;
+}
 
 .aboutImg {
     width: 1200px;
@@ -108,6 +116,13 @@
 .aboutBtn {
     padding: 10px 40px;
     border-radius: 20px;
+}
+
+.aboutBtn:hover {
+    background-color: #14f3db;
+    color:white;
+    transform: translateX(10px);
+    transition: 0.4s ease-out;
 }
 
 /* EDUCATION SECTION */
@@ -249,21 +264,219 @@
 }
 
 #bachelor::before {
-    content: '2017 - 2018';
+    content: '2016 - 2017';
 }
 
 #dut::before {
-    content: '2015 - 2017';
+    content: '2014 - 2016';
 }
 
 #bac::before {
-    content: '2014 - 2015';
+    content: '2014';
 }
 
-.educationAside a {
-    padding: 10px 20px;
-    border-radius: 15px;
-    background: #00ffff;
+.ReviewContainer {
+    background: #1C1C1C;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    border: 5px solid #14f3db;
+    box-shadow: -0.3rem 0 1rem #000;
+    margin-top:70px;
+}
+
+
+.ReviewContainer h2 {
     text-align: center;
-    font-size: 120%;
+}
+
+.ReviewContainer ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ReviewContainer li {
+    height:56px;
+    width:56px;
+    border-radius:50%;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.face {
+    height: 20px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    width:40px;
+    gap:3px;
+}
+.ReviewContainer li:hover .face {
+    transform: translateX(-4px);
+    transition: transform linear 0.2s;
+}
+
+
+.eyes {
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
+}
+
+.eyes span {
+    display:block;
+    height:8px;
+    width:8px;
+    border-radius:50%;
+    background:black;
+    animation: animEyes linear infinite 7s;
+}
+
+.mouth {
+    justify-content:center;
+    width:17px;
+    height:7px;
+    border:4px solid black;
+    align-self:center;
+
+}
+
+
+
+.ReviewContainer li:nth-child(1) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FF462E 0%, #FF7C50 100%);
+}
+
+.ReviewContainer li:nth-child(1) .face {
+    margin-top: 33px;
+    margin-left: 12px;
+}
+
+.ReviewContainer li:nth-child(1) .mouth {
+    border-bottom: 0px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+
+.ReviewContainer li:nth-child(2) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FE6430 0%, #FFAA51 100%);
+}
+
+.ReviewContainer li:nth-child(2) .face {
+    margin-top: 25px;
+    margin-left: 12px;
+}
+
+.ReviewContainer li:nth-child(2) .mouth {
+    border-bottom: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.ReviewContainer li:nth-child(3) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFAD45 0%, #FFD27E 100%);
+}
+
+    .ReviewContainer li:nth-child(3) .face {
+        margin-top: 22px;
+        margin-left: 12px;
+        gap: 5px;
+    }
+
+.ReviewContainer li:nth-child(3) .mouth {
+    border-bottom: 0px;
+    border-left:0px;
+    border-right:0px;
+}
+
+
+.ReviewContainer li:nth-child(4) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFC82F 0%, #FFE253 100%);
+}
+
+.ReviewContainer li:nth-child(4) .face {
+    margin-top: 19px;
+    margin-left: 12px;
+}
+
+.ReviewContainer li:nth-child(4) .mouth {
+    border-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.ReviewContainer li:nth-child(5) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFE83A 0%, #FFF468 100%);
+}
+    .ReviewContainer li:nth-child(5) .face {
+        margin-top: 13px;
+        margin-left: 12px;
+    }
+
+    .ReviewContainer li:nth-child(5) .mouth {
+        border-top: 0px;
+        background: black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 10px;
+    }
+
+
+@keyframes animEyes {
+    0% {
+        transform: scaleY(1);
+    }
+
+    5% {
+        transform: scaleY(1);
+    }
+    10% {
+        transform: scaleY(1);
+    }
+    15% {
+        transform: scaleY(0);
+    }
+    20% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    55% {
+        transform: scaleY(0);
+    }
+
+    60% {
+        transform: scaleY(1);
+    }
+
+    80% {
+        transform: scaleY(1);
+    }
+
+    85% {
+        transform: scaleY(0);
+    }
+
+    90% {
+        transform: scaleY(1);
+    }
+
+    95% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+
 }

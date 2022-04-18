@@ -38,6 +38,14 @@
     margin: 20px;
     gap: 10px;
     text-align: center;
+    background: white;
+    padding: 20px 20px 0px 20px;
+    border-radius: 15px;
+    box-shadow: -0.3rem 0 1rem #000;
+}
+
+.tools_card p {
+color:black !important;
 }
 
 .tools_card_img {
@@ -48,7 +56,7 @@
 }
 
 .tools_card:hover .tools_card_img img {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: 0.4s ease-out;
 }
 
@@ -78,9 +86,11 @@
 }
 
 
-.skills h3 {
+.containerSkills h3 {
     width: 100%;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 180%;
 }
 
 .subskills {
@@ -90,7 +100,7 @@
 .bar_skill {
     position: relative;
     border: 2px solid #14f3db;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px 0 30px 0;
 }
 
@@ -215,8 +225,13 @@
 
     .ServiceItems h3 {
         padding: 5px 0px;
+        text-align:center;
+        text-transform:uppercase;
     }
 
+.ServiceItems svg {
+    align-self:center;
+}
 
     .ServiceItems:hover {
         border-bottom: solid 5px #14f3db;
@@ -273,7 +288,8 @@
 
     .card h3 {
         padding-top: 10px;
-    }
+        text-transform:uppercase;
+            }
 
 
 .bar {
@@ -506,21 +522,8 @@
         padding-left: 40px;
     }
 
-    .descriptionRight a {
-        padding: 10px 20px;
-        border-radius: 15px;
-        background: #00ffff;
-        align-items: center;
-        text-align:center;
-        font-size: 120%;
-        margin-top: 40px;
-        width:350px;
-    }
 
-        .descriptionRight a:hover, .descriptionRightTwo a:hover {
-            background: white;
-            color: #14f3db;
-        }
+
 
 .aoff {
     padding: 0 !important;
@@ -555,18 +558,6 @@
     .descriptionRightTwo li, .descriptionRightTwo p {
         font-size: 20px;
     }
-
-
-.descriptionRightTwo a {
-    padding: 10px 20px;
-    border-radius: 15px;
-    background: #00ffff;
-    align-items: center;
-    font-size: 120%;
-    margin: 40px 0;
-    width: 350px;
-    text-align: center;
-}
 
 
 .descriptionRightTwo li {

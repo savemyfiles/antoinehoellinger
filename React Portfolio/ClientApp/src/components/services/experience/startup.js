@@ -11,9 +11,12 @@ class Startup extends React.Component {
 
         const { containerStyle } = styles;
 
-           return (
-            <div className="container">
-                <div className="descriptionLeft" id="homepartner">
+        return (
+            <>
+                <h1>Mon Experience en Start-up</h1>
+                <h2>Stage dans un réseau de franchises national pour améliorer la visibiltié digitale</h2>
+               <div className="container">
+                                    <div className="descriptionLeft" id="homepartner">
                 </div>
                 <div className="descriptionRight">
                     <p>Mes missions étaient :</p>
@@ -27,9 +30,10 @@ class Startup extends React.Component {
                         <li>Refonte de la charte graphique</li>
                         <li>Services de webmastering</li>
                     </ul>
-                       <a href="https://www.homepart.net/">En apprendre plus sur l'entreprise</a>
+                       <a className="button" href="https://www.homepart.net/">En apprendre plus sur l'entreprise</a>
                 </div>
-            </div>
+                </div>
+                </>
         )
     }
 }

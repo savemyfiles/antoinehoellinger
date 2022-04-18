@@ -11,6 +11,18 @@ header {
     z-index: 999;
 }
 
+.custom-select {
+align-items:center;
+justify-content:center;
+align-content:center;
+gap:10px;
+font-size:16px;
+}
+
+.custom-select svg {
+    font-size:150%;
+    color : #14f3db;
+}
 
 .navbar {
     height: 90px;
@@ -74,11 +86,13 @@ header {
     from {
         opacity: 1;
         margin-top: 0px;
+        transform: scale(1)
     }
 
     to {
         opacity: 0;
         margin-top: -100% ;
+        transform:scale(0)
     }
 }
 

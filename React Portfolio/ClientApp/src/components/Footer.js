@@ -1,19 +1,23 @@
 ﻿import React, { Component } from 'react';
 import './Footer.css';
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 
 
 export class Footer extends Component {
     static displayName = Footer.name;
 
-render() {
+    render() {
+
     return (
         <footer className="">
             <ul className="footerInfo">
                 <li><p>© 2022 Antoine HOELLINGER</p></li>
-                <li> <a href="legal.php">Mentions légales</a></li>
-                <li><a href="contact.php">Me Contacter</a></li>
+                <li> <Link tag={Link} to="/legal">Mentions légales</Link></li>
+                <li><Link tag={Link} to="/contact">Me contacter</Link></li>
+
             </ul>
 
             <ul className="">
