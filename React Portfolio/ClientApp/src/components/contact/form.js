@@ -17,27 +17,8 @@ function Form(props) {
     const [error, setError] = useState('')
 
 
-    const handleFormSubmit = e => {
-        const API_PATH = 'http://localhost/api/contact/index.php';
-        e.preventDefault();
-                axios({
-                    method: 'post',
-                    url: `${API_PATH}`,
-                    headers: { 'content-type': 'application/json' },
-                    data: this.state
-                })
-                    .then(result => {
-                        this.setState({
-                            mailSent: result.data.sent
-                        })
-                    })
-                    .catch(error => this.setState({ error: error.message }));
-            };
-
-
         return (
             <>
-
                 <div className="title">
                     <h1>{t("Me Contacter")}</h1>
                     <div className="subline"></div>
@@ -52,39 +33,39 @@ function Form(props) {
 
                             <h2>{t("Formulaire")}</h2>
 
-                            <form method="post" action="#">
+                            <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScjqE_-I63WK4IX1k7r9zpUtXDUIkq7rmT2R_oUi4T3kPHqPg/formResponse?" target="hidden_iframe" >
 
                                 <div className="form_content">
-                                    <input type="text" id="fname" name="firstname" value={fname} placeholder={t("Prénom")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, enter your First Name"))}
-                                    onInput={e => e.target.setCustomValidity('')} onChange={e => setFname({ fname: e.target.value })} />
+                                    <input type="text" id="entry.778096704" name="entry.778096704" value={fname} placeholder={t("Prénom")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, enter your First Name"))}
+                                        onInput={e => e.target.setCustomValidity('')} onChange={(e) => setFname(e.target.value)} />
                                 </div>
 
 
                                 <div className="form_content">
-                                    <input type="text" id="name" name="name" value={name} placeholder={t("Nom")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your Last Name"))}
-                                    onInput={e => e.target.setCustomValidity('')} onChange={e => setName({ name: e.target.value })} />
+                                    <input type="text" id="entry.2124326682" name="entry.2124326682" value={name} placeholder={t("Nom")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your Last Name"))}
+                                        onInput={e => e.target.setCustomValidity('')} onChange={(e) => setName(e.target.value)} />
                                 </div>
 
                                 <div className="form_content">
-                                    <input type="email" id="email" name="email" value={email} placeholder="E-mail" required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your e-mail adresse"))}
-                                    onInput={e => e.target.setCustomValidity('')} onChange={e => setEmail({ email: e.target.value })} />
-                                </div>
-
-
-                                <div className="form_content">
-                                    <input type="text" id="subject" name="subject" value={subject} placeholder={t("Sujet")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your message title"))}
-                                    onInput={e => e.target.setCustomValidity('')} onChange={e => setSubject({ subject: e.target.value })} />
+                                    <input type="email" id="entry.1573004661" name="entry.1573004661" value={email} placeholder="E-mail" required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your e-mail adresse"))}
+                                        onInput={e => e.target.setCustomValidity('')} onChange={(e) => setEmail(e.target.value)} />
                                 </div>
 
 
                                 <div className="form_content">
-                                    <input type="text" id="message" name="message" value={message} placeholder={t("Veuillez ecrire votre message ici")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your message"))}
-                                    onInput={e => e.target.setCustomValidity('')} onChange={e => setMessage({ message: e.target.value })} />
+                                    <input type="text" id="entry.493812128" name="entry.493812128" value={subject} placeholder={t("Sujet")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your message title"))}
+                                        onInput={e => e.target.setCustomValidity('')} onChange={(e) => setSubject(e.target.value)} />
+                                </div>
+
+
+                                <div className="form_content">
+                                    <input type="text" id="entry.1101036090" name="entry.1101036090" value={message} placeholder={t("Veuillez ecrire votre message ici")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, type your message"))}
+                                        onInput={e => e.target.setCustomValidity('')} onChange={(e) => setMessage(e.target.value)} />
                                 </div>
 
 
                                 <div className="form_btn">
-                                    <input className="send" type="submit" name="submit" onClick={e => handleFormSubmit(e)} value={t("Envoyer le formulaire")}/>
+                                    <input className="send" type="submit" name="submit" value={t("Envoyer le formulaire")}/>
                             </div>
 
                             <div>
@@ -94,6 +75,7 @@ function Form(props) {
                             </div>
 
                             </form>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: "none" }}></iframe>
                 </div>
 
 <div className="contact_details">
