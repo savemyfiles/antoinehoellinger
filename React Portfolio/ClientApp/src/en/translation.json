@@ -4,6 +4,8 @@
   "PMO": "PMO",
   "Développeur web": "Web developer",
   "A propos": "About",
+  "Merci": "Thanks",
+  "Votre avis m'a bien été envoyé": "You're message has been sent",
 
   "Compétences": "Skills",
   "Appétence IT": "Technical approach",
@@ -88,8 +90,8 @@
   "Le master marketing, vente de Grenoble IAE reste un master généraliste au sens où ses différents parcours ciblent, collectivement, une large palette de métiers du marketing. Chaque parcours de 2e année de master, par contre, est spécialisé sur un type spécifique de débouchés : Le quanti, Ingénerie des marques, Communication et marketing digitale, Marketing digital et consommateur connecté et Customer relationships marketing": "The marketing and sales master's degree from Grenoble IAE remains a generalist master's degree in the sense that its different courses collectively target a wide range of marketing professions. Each course of the 2nd year of the master, on the other hand, is specialized in a specific type of outlet: Quanti, Brand engineering, Communication and digital marketing, Digital marketing and connected consumer and Customer relationships marketing",
   "Lieu : G.M.I.T ( Irlande )": "Location : G.M.I.T ( Ireland )",
   "Ce programme offre une formation commerciale générale pour permettre de travailler avec succès dans les affaires avec une variété de sujets commerciaux pour développer une compréhension générale de l'environnement administratif, économique, juridique et social dans lequel les entreprises opèrent.": "This program provides general business education to enable successful work in business with a variety of business subjects to develop a general understanding of the administrative, economic, legal and social environment in which businesses operate.",
-  "D.U.T Technique de comercialisation": "2nd year of Business",
-  "Lieu : I.U.T de Valence": "Location : Valence's 'I.U.T",
+  "D.U.T Techniques de commercialisation": "2nd year of Business",
+  "Lieu : I.U.T de Valence": "Location : Valence's I.U.T",
   "Durée du programme : 2 ans": "Program duration : 2 ans",
   "L'objectif de ce diplome est de former les étudiants pour qu’ils puissent rapidement occuper des fonctions prioritairement commerciales.": "This diploma's goal is to train students in order that they can quickly occupy primarily commercial functions;",
   "BAC Economique et Social": "Economic and social graduation",
@@ -97,7 +99,7 @@
   "Université Grenoble Alpes( UGA )": "Grenoble Alpes University ( GAU )",
   "Année de césure": "Gap year",
   "Nouvelle Zélande": "New Zealand",
-  "I.U.T de Valence": "Valence's I.U.T'",
+  "I.U.T de Valence": "Valence's I.U.T",
   "Péage de Rousillon": "Péage de Rousillon",
 
   "Me Contacter": "Contact",
@@ -109,6 +111,9 @@
   "Téléphone": "Phone",
   "Vous avez un projet et vous aimeriez que l'on en discute ? N'hésitez plus, contactez-moi !": "Do you have a project and would like to discuss it together? Do not hesitate, contact me !",
   "Coordonnées": "Contact details",
-  "Formulaire": "Form"
+  "Formulaire": "Form",
+
+  "Votre message a bien été envoyé !": "You're message has been sent !",
+  "Je reviendrai vers vous dès que possible.": "I'll come back to you as soon as I can."
 
 }

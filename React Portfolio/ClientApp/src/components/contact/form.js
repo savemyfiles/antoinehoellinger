@@ -15,6 +15,12 @@ function Form(props) {
     const [message, setMessage] = useState('')
     const [mailSent, setMailSent] = useState('')
     const [error, setError] = useState('')
+    const [form, setForm] = useState(true)
+
+    const handleSubmit = event => {
+        setForm(false);
+    };
+
 
 
         return (
@@ -28,12 +34,22 @@ function Form(props) {
 
             <div className='contact_items'>
 
+                        <div className="formResult" style={{ display: form ? 'none' : 'flex' }}>
+                            <div className="wrapper"> <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                            </div>
+                            <h2>{t("Merci")},</h2>
+                            <h3>{t("Votre message a bien été envoyé !")}</h3>
+                            <p>{t("Je reviendrai vers vous dès que possible.")}</p>
+                            </div>
 
-                    <div className="form">
+                        <div className="form" style={{ display: form ? 'flex' : 'none' }}>
 
                             <h2>{t("Formulaire")}</h2>
 
-                            <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScjqE_-I63WK4IX1k7r9zpUtXDUIkq7rmT2R_oUi4T3kPHqPg/formResponse?" target="hidden_iframe" >
+                            <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScjqE_-I63WK4IX1k7r9zpUtXDUIkq7rmT2R_oUi4T3kPHqPg/formResponse?" target="hidden_iframe" onSubmit={ handleSubmit } >
 
                                 <div className="form_content">
                                     <input type="text" id="entry.778096704" name="entry.778096704" value={fname} placeholder={t("Prénom")} required onInvalid={e => e.target.setCustomValidity(i18n.t("Please, enter your First Name"))}
@@ -75,7 +91,7 @@ function Form(props) {
                             </div>
 
                             </form>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: "none" }}></iframe>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: "none" }} ></iframe>
                 </div>
 
 <div className="contact_details">

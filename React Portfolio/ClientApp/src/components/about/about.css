@@ -277,7 +277,7 @@
 
 .ReviewContainer {
     background: #1C1C1C;
-    padding-bottom: 50px;
+    padding: 20px 0px;
     border-radius: 25px;
     border: 5px solid #14f3db;
     box-shadow: -0.3rem 0 1rem #000;
@@ -289,21 +289,46 @@
     text-align: center;
 }
 
-.ReviewContainer ul {
+.ReviewList {
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
 }
 
-.ReviewContainer li {
-    height:56px;
-    width:56px;
-    border-radius:50%;
-    position:relative;
+.reviewResult {
+    text-align:center;
+}
+
+.reviewText {
+align-self:center;
+justify-content:flex-start;
+
+}
+
+    .reviewText h2 {
+        padding: 0 !important;
+        color: #14f3db !important;
+        text-align:left;
+    }
+
+
+
+.reviewResult {
+    display:flex;
     justify-content:center;
-    align-items:center;
-    cursor:pointer;
+    gap:50px;
+}
+
+.ReviewList button {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
 }
 
 .face {
@@ -314,7 +339,7 @@
     width:40px;
     gap:3px;
 }
-.ReviewContainer li:hover .face {
+.ReviewContainer button:hover .face {
     transform: translateX(-4px);
     transition: transform linear 0.2s;
 }
@@ -346,80 +371,80 @@
 
 
 
-.ReviewContainer li:nth-child(1) {
+.ReviewContainer button:nth-child(1) {
     background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FF462E 0%, #FF7C50 100%);
 }
 
-.ReviewContainer li:nth-child(1) .face {
-    margin-top: 33px;
-    margin-left: 12px;
-}
+    .ReviewContainer button:nth-child(1) .face {
+        margin-top: 33px;
+        margin-left: 12px;
+    }
 
-.ReviewContainer li:nth-child(1) .mouth {
-    border-bottom: 0px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-}
+    .ReviewContainer button:nth-child(1) .mouth {
+        border-bottom: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 
 
-.ReviewContainer li:nth-child(2) {
+.ReviewContainer button:nth-child(2) {
     background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FE6430 0%, #FFAA51 100%);
 }
 
-.ReviewContainer li:nth-child(2) .face {
-    margin-top: 25px;
-    margin-left: 12px;
-}
+    .ReviewContainer button:nth-child(2) .face {
+        margin-top: 20px;
+        margin-left: 12px;
+    }
 
-.ReviewContainer li:nth-child(2) .mouth {
-    border-bottom: 0px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
+    .ReviewContainer button:nth-child(2) .mouth {
+        border-bottom: 0px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
 
 
-.ReviewContainer li:nth-child(3) {
+.ReviewContainer button:nth-child(3) {
     background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFAD45 0%, #FFD27E 100%);
 }
 
-    .ReviewContainer li:nth-child(3) .face {
-        margin-top: 22px;
+    .ReviewContainer button:nth-child(3) .face {
+        margin-top: 10px;
         margin-left: 12px;
         gap: 5px;
     }
 
-.ReviewContainer li:nth-child(3) .mouth {
-    border-bottom: 0px;
-    border-left:0px;
-    border-right:0px;
-}
+    .ReviewContainer button:nth-child(3) .mouth {
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
 
 
-.ReviewContainer li:nth-child(4) {
+.ReviewContainer button:nth-child(4) {
     background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFC82F 0%, #FFE253 100%);
 }
 
-.ReviewContainer li:nth-child(4) .face {
-    margin-top: 19px;
-    margin-left: 12px;
-}
-
-.ReviewContainer li:nth-child(4) .mouth {
-    border-top: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-.ReviewContainer li:nth-child(5) {
-    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFE83A 0%, #FFF468 100%);
-}
-    .ReviewContainer li:nth-child(5) .face {
-        margin-top: 13px;
+    .ReviewContainer button:nth-child(4) .face {
+        margin-top: 0px;
         margin-left: 12px;
     }
 
-    .ReviewContainer li:nth-child(5) .mouth {
+    .ReviewContainer button:nth-child(4) .mouth {
+        border-top: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+.ReviewContainer button:nth-child(5) {
+    background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #FFE83A 0%, #FFF468 100%);
+}
+    .ReviewContainer button:nth-child(5) .face {
+        margin-top: -10px;
+        margin-left: 12px;
+    }
+
+    .ReviewContainer button:nth-child(5) .mouth {
         border-top: 0px;
         background: black;
         border-bottom-left-radius: 10px;
