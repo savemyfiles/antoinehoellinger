@@ -13,7 +13,7 @@ const rootElement = document.getElementById('root');
 
 
 ReactDOM.render(
-  <BrowserRouter basename={baseUrl}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
   rootElement);
