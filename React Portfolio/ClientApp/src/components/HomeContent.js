@@ -33,7 +33,7 @@ function  HomeContent() {
                         </li>
                     <li>
                         <Link className="HomeButton" tag={Link} to="/about">
-                                <FaUser className="IconHomeButton" />
+                                <div className="IconHomeButton"> <FaUser /> </div>
                                 <p className="TextHomeButton">{t('A propos')}</p>
                         </Link>
                         </li>
