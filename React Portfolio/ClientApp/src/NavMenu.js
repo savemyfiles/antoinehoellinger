@@ -11,21 +11,21 @@ import { FaLanguage } from 'react-icons/fa';
 const NavMenu = (props) => {
     const { t, i18n } = useTranslation();
 
-    const [fr, setFr] = useState('block')
-    const [en, setEn] = useState(false)
+    const [fr, setFr] = useState(false)
+    const [en, setEn] = useState('block')
 
+
+    const changeLanguageHandlerFr = (e) => {
+        setEn(true);
+        setFr(false);
+        i18n.changeLanguage("fr");
+    }
 
     const changeLanguageHandlerEn = (e) => {
         setFr(true);
         setEn(false);
         i18n.changeLanguage("en");
     }
-
-    const changeLanguageHandlerFr = (e) => {
-        setEn(true);
-        setFr(false);
-        i18n.changeLanguage("fr");
-            }
 
     const [isOpen, setOpen] = useState(false)
 
@@ -69,9 +69,8 @@ const NavMenu = (props) => {
                             <li> <Link tag={Link} to="/"> <img alt="Logo Antoine HOELLINGER"src={Logo}/> </Link></li>
                         </ul>
                         <div className="rightMenu">
-                            <div className="custom-select" style={{ display: en ? 'flex' : 'none' }} >< FaLanguage /> <a onClick={changeLanguageHandlerEn}>English</a></div>
                             <div className="custom-select" style={{ display: fr ? 'flex' : 'none' }} >< FaLanguage /> <a onClick={changeLanguageHandlerFr}>Français</a></div>
-
+                            <div className="custom-select" style={{ display: en ? 'flex' : 'none' }} >< FaLanguage /> <a onClick={changeLanguageHandlerEn}>English</a></div>
                             <div className="pragmantic_button"><a href="https://www.pragmantic.biz/" target="blank_" >PRAGMANTIC</a><p className="partners">Partners</p></div>
                            <ul className="menu">
                             <Hamburger toggled={isOpen} toggle={setOpen} rounded color="white" onToggle={toggled => {
