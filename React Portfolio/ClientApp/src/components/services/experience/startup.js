@@ -1,7 +1,10 @@
 ﻿import React from "react"
+import { useTranslation } from "react-i18next";
 
-class Startup extends React.Component {
-    render() {
+function Startup() {
+
+    const { t, i18n } = useTranslation();
+
 
         const styles = {
             containerStyle: {
@@ -13,29 +16,29 @@ class Startup extends React.Component {
 
         return (
             <>
-                <h1>Mon Experience en Start-up</h1>
-                <h2>Stage dans un réseau de franchises national pour améliorer la visibiltié digitale</h2>
+                <h1>{t("Mon Experience en Start-up")}</h1>
+                <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
                <div className="container">
                                     <div className="descriptionLeft" id="homepartner">
                 </div>
                 <div className="descriptionRight">
-                    <p>Mes missions étaient :</p>
+                        <p>{t("Mes missions étaient")} :</p>
                     <ul>
-                        <li>Concevoir et gérer un réseau de sites web avec mise en place de stratégies e-marketing (SEO & SEA).</li>
-                        <li>Créer une stratégie de contenu pour les réseaux sociaux. </li><li>Réaliser des supports de communication (print et numériques).</li>
+                            <li>{t("Concevoir et gérer un réseau de sites web avec mise en place de stratégies e-marketing (SEO & SEA).")}</li>
+                            <li>{t("Créer une stratégie de contenu pour les réseaux sociaux.")} </li>
+                            <li>{t("Réaliser des supports de communication (print et numériques).")}</li>
                     </ul>
-                    Mes aussi quelques missions en Freelance comme :
+                        <p>{t("Mais aussi quelques missions en Freelance comme")} :</p>
                     <ul>
-                        <li>Réalisation et impression de supports visuels & print</li>
-                        <li>Refonte de la charte graphique</li>
-                        <li>Services de webmastering</li>
+                            <li>{t("Réalisation et impression de supports visuels & print")}</li>
+                            <li>{t("Refonte de la charte graphique")}</li>
+                            <li>{t("Services de webmastering")}</li>
                     </ul>
-                       <a className="button" href="https://www.homepart.net/">En apprendre plus sur l'entreprise</a>
+                        <a className="button" href="https://www.homepart.net/">{t("En apprendre plus sur l'entreprise")}</a>
                 </div>
                 </div>
                 </>
         )
     }
-}
 
 export default Startup

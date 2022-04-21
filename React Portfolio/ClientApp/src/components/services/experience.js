@@ -1,5 +1,5 @@
 ﻿import React, {useState} from "react"
-import { FaBuilding, FaLuggageCart, FaLandmark } from 'react-icons/fa';
+import { FaBuilding, FaLuggageCart, FaLandmark, FaTimes } from 'react-icons/fa';
 import Freelance from './experience/freelance'
 import Startup from "./experience/startup";
 import Tourism from "./experience/tourism";
@@ -47,7 +47,7 @@ function Experience(props) {
 
             <div>
                 <div className={isActive ? "detailsOn" : "detailsOff"}>
-                    <div className="Exit" onClick={exit}>X</div>
+                    <div className="Exit" onClick={exit}>< FaTimes /></div>
 
                     <div style={{ display: display ? 'block' : 'none' }}>
                         <Startup />

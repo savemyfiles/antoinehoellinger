@@ -60,11 +60,6 @@
 
 
 
-
-
-
-
-
   "PMO spécialisé dans les projets digitaux et data.": "PMO specialized in digital and data projects.",
   "Passionné par le Big data, la sécurité informatique, le data management et l’univers du digital en général, je suis convaincu qu’une bonne gestion des données est devenue essentielle pour la croissance des entreprises. Familier avec la gestion et l'implémentation des CRM, SAP/ERP, ... Partenaire dans le réseau d'indépendants": "Passionate about Big data, IT security, data management and the digital world in general, I am convinced that good data management has become essential for business growth. Familiar with the management and implementation of CRM, SAP/ERP, ... Partner in the",
   "en tant que spécialiste digital.": "as digital specialist.",
@@ -114,6 +109,47 @@
   "Formulaire": "Form",
 
   "Votre message a bien été envoyé !": "You're message has been sent !",
-  "Je reviendrai vers vous dès que possible.": "I'll come back to you as soon as I can."
+  "Je reviendrai vers vous dès que possible.": "I'll come back to you as soon as I can.",
+
+
+  "Stage dans un réseau de franchises national pour améliorer la visibiltié digitale": "Internship in a national franchise network to improve digital visibility",
+  "En tant que Project / Program Manager, mon domaine d'intervention et d'expertise comprend toutes les missions liées à la gestion de projets informatiques que l'entreprise soit en transition ou en mode projet": "As a Project / Program Manager, my area of intervention and expertise includes all missions related to the management of IT projects whether the company is in transition or in project mode.",
+  "Mise en place du CRM (cahier des charges, demandes de devis, planning, budget, gestion, etc.)": "Implementation of the CRM (specifications, requests for quotes, planning, budget, management, etc.)",
+  "Stratégies omnicanales ( Exigences du besoin, analyse fonctionnelle, suivi de projet )": "Omnichannel strategies (need requirements, functional analysis, project monitoring)",
+  "Organisations du projet (structure, ressources, jalons, livrables, etc.)": "Project organizations (structure, resources, milestones, deliverables, etc.)",
+  "Gouvernance du projet (comité de pilotage, analyse des risques, etc.)": "Project governance (steering committee, risk analysis, etc.)",
+  "Conduite du changement (transition, processus, formation, accompagnement, etc.)": "Change management (transition, process, training, support, etc.)",
+
+  "En tant que spécialiste numérique dans le projet de transformation informatique globale pour un établissement de crédit national, j'ai dû aider l'équipe technique sur des projets qui nécessitaient des connaissances techniques": "As a digital specialist in the global IT transformation project for a national credit institution, I had to help the technical team on projects that required technical knowledge",
+  "Configuration, paramétrage & support CRM : paramètres Salesforce & APEX.": "Configuration, configuration & CRM support: Salesforce & APEX parameters.",
+  "Webmaster du site ( HTML, CSS, Symfony (PHP) )": "Webmaster ( HTML, CSS, Symfony (PHP) )",
+  "Suivi, analyse et reporting des données à l'aide d'outils BI.": "Data monitoring, analysis and reporting using BI tools.",
+  "Equipe de documentation technique et d'assistance à la formation.": "Technical documentation and training support team.",
+  "En tant que support technique et ressource projet sur un groupe refondant toute sa structure informatique, j'étais chargé de": "As technical support and project resource for a group redesigning its entire IT structure, I was in charge of",
+
+  "Rédaction de spécifications pour l'équipe commerciale et technique pour la feuille de route de transformation incluant l'entrepôt de données, les outils omnicanaux, la BI.": "Writing specifications for the commercial and technical team for the transformation roadmap including data warehouse, omnichannel tools, BI.",
+  "Exploitation et mises à jour du CRM et du site web": "Operation and updates of the CRM and the website",
+  "J'y étais": "I was there",
+  "Grand événement annuel en France, le Salesforce World Tour Paris. Pour vous faire profiter au maximum et personnaliser votre programme, nous proposons plusieurs conférences plénières. Celles-ci aborderont les grands enjeux de votre business : tendances du BtoC, du BtoB, les défis d’une entreprise en hypercroissance ou encore les priorités stratégiques des grands groupes": "Major annual event in France, the Salesforce World Tour Paris. To help you get the most out of and personalize your program, we offer several plenary conferences. These will address the major challenges of your business: BtoC and BtoB trends, the challenges of a hyper-growth company or the strategic priorities of large groups.",
+  "Rediffusion de l'évennement Salesforce à Paris. Dreamforce est un événement annuel de quatre jours qui rassemble l'ensemble de la communauté Salesforce. Il s'agit d'une expérience qui célèbre les pionniers et la réussite des clients. Dreamforce est l'endroit où les pionniers du monde entier se réunissent pour partager leurs histoires, leurs réussites et apprendre les uns des autres. En général, Dreamforce a lieu pendant l'automne, de septembre à novembre à San Francisco, en Californie, sur plusieurs sites": "Rebroadcast of the Salesforce event in Paris. Dreamforce is an annual four-day event that brings together the entire Salesforce community. It's an experience that celebrates pioneers and customer success. Dreamforce is where pioneers from around the world come together to share their stories, successes, and learn from each other. In general, Dreamforce takes place during the fall, from September to November in San Francisco, California at several locations",
+
+  "Mes missions étaient": "My missions were",
+  "Concevoir et gérer un réseau de sites web avec mise en place de stratégies e-marketing (SEO & SEA).": "Design and manage a network of websites with implementation of e-marketing strategies (SEO & SEA).",
+  "Créer une stratégie de contenu pour les réseaux sociaux.": "Create a social media content strategy.",
+  "Réaliser des supports de communication (print et numériques).": "Produce communication media (print and digital).",
+  "Mais aussi quelques missions en Freelance comme": "But also some freelance missions like",
+  "Réalisation et impression de supports visuels & print": "Production and printing of visual & print media",
+  "Refonte de la charte graphique": "Redesign of the graphic charter",
+  "Services de webmastering": "Webmastering services",
+  "En apprendre plus sur l'entreprise": "Learn more about the company",
+
+  "Alternance au CRO de Disneyland Paris, l'entité du groupe en charge de la relation client internationale ( 6 langues, 10 marchés segmentés, 5 canaux de communication ).": "Alternation to the CRO of Disneyland Paris, the group entity in charge of international customer relations (6 languages, 10 segmented markets, 5 communication channels).",
+  "Développement de spécifications, workflow technique et cas d'utilisation métier": "Development of specifications, technical workflow and business use cases",
+  "Diriger la réunion de stand-up avec un objectif de moins de 5 % de tâches de retard.": "Lead the stand-up meeting with a target of less than 5% overdue tasks.",
+  "Planification, suivi des tâches et rapport aux responsables de service.": "Planning, monitoring tasks and reporting to department managers.",
+  "Documentation du projet.": "Projet Documentation.",
+  "Gestion budgétaire du projet.": "Project Financial follow-up.",
+  "Formation de 450 utilisateurs.": "Training of 450 users.",
+  "Gérer la relation entre les services fonctionnels et techniques.": "Manage the relationship between functional and technical services."
 
 }

@@ -18,6 +18,12 @@
 }
 
 
+.descrText {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
 .tools {
     display: flex;
     flex-wrap: wrap;
@@ -477,12 +483,33 @@ color:black !important;
 }
 
 .Exit {
-    position:absolute;
-    right:60px;
+    position:sticky;
+    margin-left:100%;
     font-size:200%;
     cursor:pointer;
     top:20px;
+    width: 32px;
     color:white;
+    z-index:99;
+    animation : ExitOn forwards 1.5s;
+}
+
+@keyframes ExitOn {
+    0% {
+        opacity:0;
+    }
+
+    80% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+.Exit:hover {
+    color:#14f3db;
 }
 
 .container {

@@ -1,7 +1,10 @@
 ﻿import React from "react"
+import { useTranslation } from "react-i18next";
 
-class Tourism extends React.Component {
-    render() {
+function Tourism(props) {
+
+    const { t, i18n } = useTranslation();
+
 
         const styles = {
             containerStyle: {
@@ -13,27 +16,27 @@ class Tourism extends React.Component {
 
         return (
                         <>
-                <h1>Mon Experience en Start-up</h1>
-                <h2>Stage dans un réseau de franchises national pour améliorer la visibiltié digitale</h2>
+                <h1>{t("Mon Experience en Start-up")}</h1>
+                <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
             <div className="container">
                 <div className="descriptionLeft" id="disney">
                 </div>
                 <div className="descriptionRight">
-                    <p>Alternance au CRO de Disneyland Paris, l'entité du groupe en charge de la relation client internationale ( 6 langues, 10 marchés segmentés, 5 canaux de communication ).</p>
+                        <p>{t("Alternance au CRO de Disneyland Paris, l'entité du groupe en charge de la relation client internationale ( 6 langues, 10 marchés segmentés, 5 canaux de communication ).")}</p>
                     <ul>
-                        <li>Développement de spécifications, workflow technique et cas d'utilisation métier</li>
-                        <li>Diriger la réunion de stand-up avec un objectif de moins de 5 % de tâches de retard.</li>
-                        <li>Planification, suivi des tâches et rapport aux responsables de service.</li><li>Documentation du projet.</li>
-                        <li>Gestion budgétaire du projet.</li>
-                        <li>Formation de 450 utilisateurs.</li>
-                        <li>Gérer la relation entre les services fonctionnels et techniques.</li>
+                        <li>{t("Développement de spécifications, workflow technique et cas d'utilisation métier")}</li>
+                        <li>{t("Diriger la réunion de stand-up avec un objectif de moins de 5 % de tâches de retard.")}</li>
+                        <li>{t("Planification, suivi des tâches et rapport aux responsables de service.")}</li>
+                        <li>{t("Documentation du projet.")}</li>
+                        <li>{t("Gestion budgétaire du projet.")}</li>
+                        <li>{t("Formation de 450 utilisateurs.")}</li>
+                        <li>{t("Gérer la relation entre les services fonctionnels et techniques.")}</li>
                     </ul>
-                    <a  className="button" href='https://www.disneylandparis.com'> En apprendre plus sur l'entreprise</a>
+                        <a className="button" href='https://www.disneylandparis.com'>{t("En apprendre plus sur l'entreprise")}</a>
                 </div>
                 </div>
                 </>
         )
     }
-}
 
 export default Tourism
