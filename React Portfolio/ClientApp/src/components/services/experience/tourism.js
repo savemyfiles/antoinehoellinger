@@ -19,7 +19,7 @@ function Tourism(props) {
                 <h1>{t("Mon Experience en Start-up")}</h1>
                 <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
             <div className="container">
-                <div className="descriptionLeft" id="disney">
+                <div className="descriptionLeft imageExp" id="disney">
                 </div>
                 <div className="descriptionRight">
                         <p>{t("Alternance au CRO de Disneyland Paris, l'entité du groupe en charge de la relation client internationale ( 6 langues, 10 marchés segmentés, 5 canaux de communication ).")}</p>

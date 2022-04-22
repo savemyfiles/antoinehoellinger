@@ -198,11 +198,101 @@ input:focus {
         font-size: 15px;
     }
 
+    .detailsOn {
+        left: 20px;
+        padding: 0 20px;
+        height: calc(100% - 40px);
+        width: 600px;
+    }
+
+        .detailsOn h1 {
+            font-size: 40px !important;
+        }
+
+        .detailsOn h2 {
+            font-size: 20px !important;
+        }
+
+
+
+    .Exit {
+        margin-left:90%;
+    }
+
+    .container {
+        flex-wrap:wrap;
+        text-align:center;
+        padding:100px 0px;
+    }
+
+    .descriptionRightTwo a, .descriptionRight a, .imageExp {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imageExp {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    @keyframes detailsOnComing {
+        0% {
+            top: calc(100% + 100px);
+            width: 0px;
+            overflow-y: hidden;
+        }
+
+        30% {
+            background: black;
+            top: 100px;
+            width: 0px;
+            overflow-y: hidden;
+        }
+
+        60% {
+            background: black;
+            top: 100px;
+            width: calc(100% - 40px);
+            overflow-y: hidden;
+        }
+
+        100% {
+            overflow-y: auto;
+            background: black;
+            top: 80px;
+            width: calc(100% - 40px);
+        }
+    }
+
+    .descriptionLeftTwo {
+        min-width:300px;
+    }
+
+    .hero h1  {
+        font-size: 540%;
+    }
+
+    .heroSubtitle, .dropping-texts {
+        font-size: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 576px ) {
     .main {
         width: 85%;
+    }
+
+    footer ul {
+        gap: 20px;
+        font-size:12px;
+    }
+
+    .detailsOn {
+        height: calc(100% - 200px);
     }
 
     .aboutImg {
@@ -232,6 +322,18 @@ input:focus {
 
     .aboutImg {
         margin-top: 0px;
+    }
+
+    .hero h1 {
+        font-size: 330%;
+    }
+
+    .heroSubtitle, .dropping-texts {
+        font-size: 17px;
+    }
+
+    .pragmantic_button {
+        display:none;
     }
 
     }

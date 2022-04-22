@@ -12,7 +12,7 @@ function Freelance(props) {
                 <h1>{t("Mon Experience en Start-up")}</h1>
                 <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
             <div className="container">
-                    <div className="descriptionLeft" id="it" >
+                    <div className="descriptionLeft imageExp" id="it" >
                     </div>
                     <div className="descriptionRight">
                         <p>{t("En tant que Project / Program Manager, mon domaine d'intervention et d'expertise comprend toutes les missions liées à la gestion de projets informatiques que l'entreprise soit en transition ou en mode projet")} :</p>
@@ -53,14 +53,14 @@ function Freelance(props) {
                         <a className="button" href="https://www.salesforce.com/fr/events/salesforce-world-tour-paris-2022/?dysig_tid=e7aaf5c37a664761a9ee96c441b601fd">{t("En savoir plus")}</a>
                     </div>
 
-                    <div className="descriptionLeftTwo" id="worldtour" >
+                    <div className="descriptionLeftTwo imageExp" id="worldtour" >
                     </div>
                 </div>
 
                 <div className="container">
 
 
-                    <div className="descriptionRightTwo">
+                    <div className="descriptionRightTwo imageExp">
 
                     <div className="descrText"> 
                         <h3>Salesforce Dreamforce 2021 </h3>
@@ -71,7 +71,7 @@ function Freelance(props) {
 
 
                 </div>
-                    <div className="descriptionLeftTwo" id="dreamforce"></div>
+                    <div className="descriptionLeftTwo imageExp" id="dreamforce"></div>
                 </div>
                 </>
         )
