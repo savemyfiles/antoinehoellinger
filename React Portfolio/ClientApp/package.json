@@ -2,7 +2,7 @@
   "name": "react_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://savemyfiles.github.io/reactme",
+  "homepage": "https://savemyfiles.github.io/antoinehoellinger",
   "dependencies": {
     "axios": "^0.26.1",
     "cors": "^2.8.5",
