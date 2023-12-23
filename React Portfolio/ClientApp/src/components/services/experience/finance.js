@@ -2,15 +2,15 @@
 import { useTranslation } from "react-i18next";
 
 
-function Freelance(props) {
+function Finance(props) {
 
     const { t, i18n } = useTranslation();
 
 
         return (
             <>
-                <h1>{t("Mon Experience en Start-up")}</h1>
-                <h2>{t("Mission dans un filiale d'un grand groupe bancaire")}</h2>
+                <h1>{t("Mon Experience en Micro-finance")}</h1>
+                <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
             <div className="container">
                     <div className="descriptionLeft imageExp" id="it" >
                     </div>
@@ -40,41 +40,9 @@ function Freelance(props) {
                 </div>
                     </div>
 
-            <div className="container">
-
-                <div className="descriptionRightTwo">
-                        <h2>{t("J'y étais")} !</h2>
-
-                        <div className="descrText">
-                            <h3>Salesforce World Tour Paris 2022 </h3>
-                        <h4>Paris | 29-03-2022</h4>
-                            <p>{t("Grand événement annuel en France, le Salesforce World Tour Paris. Pour vous faire profiter au maximum et personnaliser votre programme, nous proposons plusieurs conférences plénières. Celles-ci aborderont les grands enjeux de votre business : tendances du BtoC, du BtoB, les défis d’une entreprise en hypercroissance ou encore les priorités stratégiques des grands groupes")}</p>
-                    </div>
-                        <a className="button" href="https://www.salesforce.com/fr/events/salesforce-world-tour-paris-2022/?dysig_tid=e7aaf5c37a664761a9ee96c441b601fd">{t("En savoir plus")}</a>
-                    </div>
-
-                    <div className="descriptionLeftTwo imageExp" id="worldtour" >
-                    </div>
-                </div>
-
-                <div className="container">
-
-
-                    <div className="descriptionRightTwo imageExp">
-
-                    <div className="descrText"> 
-                        <h3>Salesforce Dreamforce 2021 </h3>
-                        <h4>Paris</h4>
-                            <p>{t("Rediffusion de l'évennement Salesforce à Paris. Dreamforce est un événement annuel de quatre jours qui rassemble l'ensemble de la communauté Salesforce. Il s'agit d'une expérience qui célèbre les pionniers et la réussite des clients. Dreamforce est l'endroit où les pionniers du monde entier se réunissent pour partager leurs histoires, leurs réussites et apprendre les uns des autres. En général, Dreamforce a lieu pendant l'automne, de septembre à novembre à San Francisco, en Californie, sur plusieurs sites")}. ( source : <a className="aoff" href="https://www.blurec.fr/blog/2021/05/dreamforce-levenement-annuel-de-salesforce">blurec.fr</a> )</p>
-                    </div>
-                    <a className="button" href="https://www.salesforce.com/plus/experience/Dreamforce_2021/">{t("En savoir plus")}</a>
-
-
-                </div>
-                    <div className="descriptionLeftTwo imageExp" id="dreamforce"></div>
-                </div>
+           
                 </>
         )
     }
 
-export default Freelance
+export default Finance

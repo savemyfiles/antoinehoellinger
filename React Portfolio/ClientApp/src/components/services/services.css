@@ -256,7 +256,7 @@ color:black !important;
 .card {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 700px;
     width: 350px;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
@@ -411,14 +411,16 @@ color:black !important;
     animation: detailsOnComing 2s forwards;
     overflow-x: hidden;
     display: flex;
+    top:0;
+    left:0;
+    width:100vw;
     flex-direction: column;
     position: fixed;
-    left: 100px;
     z-index: 900;
     padding: 0 80px;
     border-radius: 15px;
     box-shadow: -1rem 0 3rem #000;
-    height: calc(100% - 20px);
+    height: 100vh;
 }
 
     .detailsOn container, .detailsOn h1, .detailsOn h2 {
@@ -453,14 +455,14 @@ color:black !important;
 
     30% {
         background: black;
-        top: 100px;
+        top: 0px;
         width: 0px;
         overflow-y: hidden;
     }
 
     60% {
         background: black;
-        top: 100px;
+        top: 0px;
         width: calc(100% - 200px);
         overflow-y: hidden;
     }
@@ -468,8 +470,9 @@ color:black !important;
     100% {
         overflow-y: auto;
         background: black;
-        top: 100px;
-        width: calc(100% - 200px);
+        top: 0px;
+        width: 100vw;
+        z-index:999;
     }
 
     }
