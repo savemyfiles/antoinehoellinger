@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/antoinehoellinger/static/css/main.40702512.css",
-    "main.js": "/antoinehoellinger/static/js/main.f268df9e.js",
+    "main.css": "/antoinehoellinger/static/css/main.f85dfe2e.css",
+    "main.js": "/antoinehoellinger/static/js/main.e6eee9c8.js",
     "static/media/web.png": "/antoinehoellinger/static/media/web.c8eca491d9ea2d2f01b1.png",
     "static/media/antoine.jpg": "/antoinehoellinger/static/media/antoine.2c18771e549cdb155229.jpg",
     "static/media/worldtour.jpg": "/antoinehoellinger/static/media/worldtour.4a6e8bbf1654e1781fc8.jpg",
     "static/media/disney.png": "/antoinehoellinger/static/media/disney.0b073311f95275271dab.png",
+    "static/media/tech.jpg": "/antoinehoellinger/static/media/tech.2d3bd9215287abcb51d7.jpg",
+    "static/media/pmoint.jpeg": "/antoinehoellinger/static/media/pmoint.699d55dc94c579c11421.jpeg",
     "static/media/jira.png": "/antoinehoellinger/static/media/jira.cffa7aa0c5a899c158e7.png",
     "static/media/salesforce.png": "/antoinehoellinger/static/media/salesforce.1176d5502e223811c034.png",
     "static/media/dreamforce.jpg": "/antoinehoellinger/static/media/dreamforce.c12b551118c4322f62a6.jpg",
@@ -17,11 +19,11 @@
     "static/media/pragmantic.png": "/antoinehoellinger/static/media/pragmantic.df89f411e8f57fe64070.png",
     "static/media/IcoLogo.svg": "/antoinehoellinger/static/media/IcoLogo.5754b425b266390d3597542a5386e797.svg",
     "index.html": "/antoinehoellinger/index.html",
-    "main.40702512.css.map": "/antoinehoellinger/static/css/main.40702512.css.map",
-    "main.f268df9e.js.map": "/antoinehoellinger/static/js/main.f268df9e.js.map"
+    "main.f85dfe2e.css.map": "/antoinehoellinger/static/css/main.f85dfe2e.css.map",
+    "main.e6eee9c8.js.map": "/antoinehoellinger/static/js/main.e6eee9c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.40702512.css",
-    "static/js/main.f268df9e.js"
+    "static/css/main.f85dfe2e.css",
+    "static/js/main.e6eee9c8.js"
   ]
 }
