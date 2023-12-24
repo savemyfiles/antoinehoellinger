@@ -1,4 +1,4 @@
-﻿import React from "react"
+﻿    import React from "react"
 import { useTranslation } from "react-i18next";
 
 
@@ -10,36 +10,41 @@ function Finance(props) {
         return (
             <>
                 <h1>{t("Mon Experience en Micro-finance")}</h1>
-                <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
             <div className="container">
-                    <div className="descriptionLeft imageExp" id="it" >
+                    <div className="descriptionLeft imageExp" id="pmoint" >
                     </div>
                     <div className="descriptionRight">
-                        <p>{t("En tant que Project / Program Manager, mon domaine d'intervention et d'expertise comprend toutes les missions liées à la gestion de projets informatiques que l'entreprise soit en transition ou en mode projet")} :</p>
-                < ul >
-                            <li>{t("Mise en place du CRM (cahier des charges, demandes de devis, planning, budget, gestion, etc.)")}</li>
-                            <li>{t("Stratégies omnicanales ( Exigences du besoin, analyse fonctionnelle, suivi de projet )")}</li>
-                            <li>{t("Organisations du projet (structure, ressources, jalons, livrables, etc.)")}</li>
-                            <li>{t("Gouvernance du projet (comité de pilotage, analyse des risques, etc.)")}</li>
-                            <li>{t("Conduite du changement (transition, processus, formation, accompagnement, etc.)")}</li>
+                        <h2>{t("PMO International")}</h2>
+
+                        <p>{t("Préstation dans le cadre d’un déploiement Core Model ( comprenant 1 CBS, une 10ène d'applications connexes, 1 middleware, ... ) à l’international ( 9 pays ), en tant que PMO Central pour")} :</p>
+                         < ul >
+                            <li>{t("Superviser et suivre les tâches centrales visant la livraison et l'alignement avec le déploiement du Core Model dans les filiales concernées. Recueillir des données sur l'exécution des Projets.")}</li>
+                            <li>{t("Maitriser le planning du programme au niveau central et faire les actualisations nécessaires pour le suivi selon les directrices de la direction.")}</li>
+                            <li>{t("Dans les instances de suivi des projets, identifier les risques, suivre les actions et les escalades et faire le lien entre les pays en processus de déploiement.")}</li>
                         </ul >
 
-                        <p>{t("En tant que spécialiste numérique dans le projet de transformation informatique globale pour un établissement de crédit national, j'ai dû aider l'équipe technique sur des projets qui nécessitaient des connaissances techniques")} :</p>
-        <ul>
-                            <li>{t("Configuration, paramétrage & support CRM : paramètres Salesforce & APEX.")}</li>
-                            <li>{t("Webmaster du site ( HTML, CSS, Symfony (PHP) )")}</li>
-                            <li>{t("Suivi, analyse et reporting des données à l'aide d'outils BI.")}</li>
-                            <li>{t("Equipe de documentation technique et d'assistance à la formation.")}</li>
-                        </ul>{t("En tant que support technique et ressource projet sur un groupe refondant toute sa structure informatique, j'étais chargé de")} :
-            < ul >
-                            <li>{t("Exploitation et mises à jour du CRM et du site web")}</li>
-                    <li>{t("Rédaction de spécifications pour l'équipe commerciale et technique pour la feuille de route de transformation incluant l'entrepôt de données, les outils omnicanaux, la BI.")}</li>
-                        </ul >
                         <a className="button" href="https://www.pragmantic.biz/">{t("En savoir plus")}</a>
 
                 </div>
+                </div>
+
+                <div className="container">
+
+
+                        <div className="descriptionRight">
+                            <h2>{t("PMO Technique")}</h2>
+
+                            <ul>
+                            <li>{t("En charge de la gestion et du suivi d'un projet de migration majeur de Paas à IaaS, couvrant neuf pays et englobant plus de dix applications, un middleware, et un CBS (Core Model). De la phase de benchmark de partenaire au déploiement BUILD.")}</li>
+                            <li>{t("Cadrage et suivi des chantiers Infra et solutions digitales.")}</li>
+                                <li>{t("Cadrage et suivi des chantiers d'intégration pour la mise en place d'API.")}</li>
+                                </ul>
+                        <a style={{ justifySelf: 'flex-end' }} className="button" href="https://www.pragmantic.biz/">{t("En savoir plus")}</a>
                     </div>
 
+                    <div className="descriptionLeftTwo imageExp" id="pmoit" >
+                    </div>
+                </div>
            
                 </>
         )

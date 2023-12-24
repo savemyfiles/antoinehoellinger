@@ -10,78 +10,32 @@ import { useTranslation } from "react-i18next";
 function Experience(props) {
 
     const { t, i18n } = useTranslation();
-    const [display, setDisplay] = useState('none')
+    const [display, setDisplay] = useState()
     const [displaytwo, setDisplaytwo] = useState("none")
     const [displaythree, setDisplaythree] = useState("none")
     const [displayfour, setDisplayfour] = useState("none")
-    const [isActive, setisActive] = useState(false)
-
-    const handleStartUp = () => {
-
-        setDisplay(true);
-        setDisplaytwo(false);
-        setDisplaythree(false);
-        setDisplayfour(false);
-        setisActive(true);
-    };
-
-    const handleTourism = () => {
-        setDisplay(false);
-        setDisplaytwo(true);
-        setDisplaythree(false);
-        setDisplayfour(false);
-        setisActive(true);
-    };
-
-
-    const handleBank = () => {
-        setDisplay(false);
-        setDisplaytwo(false);
-        setDisplaythree(true);
-        setDisplayfour(false);
-        setisActive(true);
-    };
-
-    
-
-    const handleFinance = () => {
-        setDisplay(false);
-        setDisplaytwo(false);
-        setDisplaythree(false);
-        setDisplayfour(true);
-        setisActive(true);
-    };
-
-
-    const exit = () => {
-        setisActive(false);
-    };
 
 
         return (
 
             <div>
-                <div className={isActive ? "detailsOn" : "detailsOff"}>
-                    <div className="Exit" onClick={exit}>< FaTimes /></div>
 
-                    <div style={{ display: display ? 'block' : 'none' }}>
-                        <Startup />
+                {display &&
+                    <div className={display ? "detailsOn" : "detailsOff"}>
+                        <div className="Exit" onClick={() => { setDisplay() }}>< FaTimes /></div>
+
+                        <div style={{ display: display ? 'block' : 'none' }}>
+                            {display}
+                        </div>
                     </div>
-                    <div style={{ display: displaytwo ? 'block' : 'none' }}>
-                        <Tourism />
-                    </div>
-                    <div style={{display: displaythree ? 'block' : 'none' }}>
-                        <Freelance />
-                    </div>
-                    <div style={{ display: displayfour ? 'block' : 'none' }}>
-                        <Finance />
-                    </div>
-                                    </div>
+                }
+             
+                
                 <h2>{t("Mes précendents domaines")}</h2>
 
                 <div className="experience">
 
-                    <div className="card" onClick={handleStartUp}>
+                    <div className="card" onClick={() => { setDisplay(< Startup setDisplay={setDisplay} />) }}>
     < FaBuilding className="servicesIcons"/>
     <h3>Start-up</h3>
     <h4>2018 - 2019</h4>
@@ -94,7 +48,7 @@ function Experience(props) {
     </div>
   </div>
 
-                    <div className="card" onClick={handleTourism}>
+                    <div className="card" onClick={() => { setDisplay(< Tourism setDisplay={setDisplay} />) }}>
                     < FaLuggageCart className="servicesIcons" />
     <h3>{t("Tourisme")}</h3>
     <h4>2020 - 2021</h4>
@@ -109,7 +63,7 @@ function Experience(props) {
 
 
 
-                    <div className="card" onClick={handleBank}>
+                    <div className="card" onClick={() => { setDisplay(< Freelance setDisplay={setDisplay} />) }}>
                         < FaLandmark className="servicesIcons" />
                           <h3>{t("Banque")}</h3>
                            <h4>2021 - 2023</h4>
@@ -122,7 +76,7 @@ function Experience(props) {
                               </div>
                     </div>
 
-                    <div className="card" onClick={handleFinance}>
+                    <div className="card" onClick={() => { setDisplay(< Finance setDisplay={setDisplay} />) }}>
                         < FaLandmark className="servicesIcons" />
                         <h3>{t("Finance")}</h3>
                         <h4>2022 - {t("Aujourd'hui")}</h4>

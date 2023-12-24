@@ -5,6 +5,7 @@
   "homepage": "https://savemyfiles.github.io/antoinehoellinger",
   "dependencies": {
     "axios": "^0.26.1",
+    "browserslist": "^4.22.2",
     "cors": "^2.8.5",
     "eslint-config-react-app": "^7.0.0",
     "hamburger-react": "^2.4.1",
@@ -42,11 +43,9 @@
   },
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",
-    "start": "rimraf ./build && react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "eslint ./src/"
+    "start": "rimraf ./build && react-scripts start",
+    "test": "cross-env CI=true react-scripts test --env=jsdom"
   },
   "browserslist": {
     "production": [

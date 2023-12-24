@@ -448,24 +448,26 @@ color:black !important;
 
     @keyframes detailsOnComing {
         0% {
-        top: calc(100% + 100px);
-        width: 0px;
-        overflow-y: hidden;
-    }
+            top: calc(100% + 100px);
+            width: 0vw;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
-    30% {
-        background: black;
-        top: 0px;
-        width: 0px;
-        overflow-y: hidden;
-    }
+        30% {
+            background: black;
+            top: 0px;
+            width: 0vw;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
-    60% {
-        background: black;
-        top: 0px;
-        width: calc(100% - 200px);
-        overflow-y: hidden;
-    }
+        60% {
+            background: black;
+            top: 0px;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
     100% {
         overflow-y: auto;
@@ -610,4 +612,12 @@ color:black !important;
 
 #disney {
     background: center / contain no-repeat url('../../assets/images/disney.png')
+}
+
+#pmoint {
+    background: center / contain no-repeat url('../../assets/images/pmoint.jpeg')
+}
+
+#pmoit {
+    background: center / contain no-repeat url('../../assets/images/tech.jpg')
 }

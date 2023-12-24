@@ -60,7 +60,7 @@ function Freelance(props) {
                 <div className="container">
 
 
-                    <div className="descriptionRightTwo imageExp">
+                    <div className="descriptionRight imageExp">
 
                     <div className="descrText"> 
                         <h3>Salesforce Dreamforce 2021 </h3>
