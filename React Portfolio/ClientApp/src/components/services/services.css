@@ -621,3 +621,11 @@ color:black !important;
 #pmoit {
     background: center / cover no-repeat url('../../assets/images/tech.jpg')
 }
+
+#pmoint {
+    background: center / contain no-repeat url('../../assets/images/pmoint.jpeg')
+}
+
+#pmoit {
+    background: center / contain no-repeat url('../../assets/images/tech.jpg')
+}
