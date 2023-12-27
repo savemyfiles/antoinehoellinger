@@ -11,7 +11,7 @@ function Finance(props) {
             <>
                 <h1>{t("Mon Experience en Micro-finance")}</h1>
             <div className="container">
-                    <div className="descriptionLeft imageExp" id="pmoint" >
+                    <div className="imageExp" id="pmoint" >
                     </div>
                     <div className="descriptionRight">
                         <h2>{t("PMO International")}</h2>
@@ -42,7 +42,7 @@ function Finance(props) {
                         <a style={{ justifySelf: 'flex-end' }} className="button" href="https://www.pragmantic.biz/">{t("En savoir plus")}</a>
                     </div>
 
-                    <div className="descriptionLeftTwo imageExp" id="pmoit" >
+                    <div className="imageExp" id="pmoit" >
                     </div>
                 </div>
            

@@ -11,7 +11,7 @@ function  HomeContent() {
         const { t, i18n } = useTranslation();
 
         return (
-            <div className="hero">
+            <>
                 <div className="lang">
                     <li><Link tag={Link} to="/contact">< FaRegCommentAlt /></Link></li>
                 </div>
@@ -47,7 +47,7 @@ function  HomeContent() {
                     <li><a href="https://github.com/savemyfiles"><FaGithub /></a></li>
                 </div>
 
-            </div>
+            </>
         )
     }
 

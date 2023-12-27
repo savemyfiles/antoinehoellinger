@@ -19,7 +19,7 @@ function Startup() {
                 <h1>{t("Mon Experience en Start-up")}</h1>
                 <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
                <div className="container">
-                    <div className="descriptionLeft imageExp" id="homepartner">
+                    <div className="imageExp" id="homepartner">
                 </div>
                 <div className="descriptionRight">
                         <p>{t("Mes missions étaient")} :</p>

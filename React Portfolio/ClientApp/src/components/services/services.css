@@ -396,6 +396,9 @@ color:black !important;
 
 @media only screen and (max-width: 992px ) {
 
+
+
+
 }
 
 @media only screen and (max-width: 768px ) {
@@ -521,11 +524,17 @@ color:black !important;
     padding: 50px 0;
    }
 
-.descriptionLeft {
+
+.imageExp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
     display: flex;
     height: 400px;
-    min-width: 400px;
 }
+
 
 .descriptionRight {
     display: flex;

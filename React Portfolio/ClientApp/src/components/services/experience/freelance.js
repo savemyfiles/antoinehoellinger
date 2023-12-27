@@ -53,25 +53,24 @@ function Freelance(props) {
                         <a className="button" href="https://www.salesforce.com/fr/events/salesforce-world-tour-paris-2022/?dysig_tid=e7aaf5c37a664761a9ee96c441b601fd">{t("En savoir plus")}</a>
                     </div>
 
-                    <div className="descriptionLeftTwo imageExp" id="worldtour" >
+                    <div className="imageExp" id="worldtour" >
                     </div>
                 </div>
 
                 <div className="container">
 
 
-                    <div className="descriptionRight imageExp">
 
                     <div className="descrText"> 
                         <h3>Salesforce Dreamforce 2021 </h3>
                         <h4>Paris</h4>
-                            <p>{t("Rediffusion de l'évennement Salesforce à Paris. Dreamforce est un événement annuel de quatre jours qui rassemble l'ensemble de la communauté Salesforce. Il s'agit d'une expérience qui célèbre les pionniers et la réussite des clients. Dreamforce est l'endroit où les pionniers du monde entier se réunissent pour partager leurs histoires, leurs réussites et apprendre les uns des autres. En général, Dreamforce a lieu pendant l'automne, de septembre à novembre à San Francisco, en Californie, sur plusieurs sites")}. ( source : <a className="aoff" href="https://www.blurec.fr/blog/2021/05/dreamforce-levenement-annuel-de-salesforce">blurec.fr</a> )</p>
+                        <p>{t("Rediffusion de l'évennement Salesforce à Paris. Dreamforce est un événement annuel de quatre jours qui rassemble l'ensemble de la communauté Salesforce. Il s'agit d'une expérience qui célèbre les pionniers et la réussite des clients. Dreamforce est l'endroit où les pionniers du monde entier se réunissent pour partager leurs histoires, leurs réussites et apprendre les uns des autres. En général, Dreamforce a lieu pendant l'automne, de septembre à novembre à San Francisco, en Californie, sur plusieurs sites")}. ( source : <a className="aoff" href="https://www.blurec.fr/blog/2021/05/dreamforce-levenement-annuel-de-salesforce">blurec.fr</a> )</p>
+                        <a className="button" href="https://www.salesforce.com/plus/experience/Dreamforce_2021/">{t("En savoir plus")}</a>
+
                     </div>
-                    <a className="button" href="https://www.salesforce.com/plus/experience/Dreamforce_2021/">{t("En savoir plus")}</a>
 
 
-                </div>
-                    <div className="descriptionLeftTwo imageExp" id="dreamforce"></div>
+                    <div className="imageExp" id="dreamforce"></div>
                 </div>
                 </>
         )
