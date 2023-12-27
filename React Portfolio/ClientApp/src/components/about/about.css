@@ -302,6 +302,7 @@ height:auto;
     align-content: center;
     justify-content: center;
     gap: 35px;
+    flex-wrap:wrap;
 }
 
 .reviewResult {
