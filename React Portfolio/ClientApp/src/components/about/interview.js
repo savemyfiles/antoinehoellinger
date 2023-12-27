@@ -23,12 +23,8 @@ function Interview(props) {
                     <a className="button" style={{ margin: '50px auto 0px auto' }} href="https://www.linkedin.com/feed/update/urn:li:activity:7052581704510664704/">{t("En savoir plus")}</a>
 
                 </div >
-
                 <div className="videoContainer underligned"  >
-                    <video width="100%" height="auto" controls>
-                        <source src="./videos/interview-antoine.mp4" type="video/mp4" />
-                        {t("Votre navigateur ne prend pas en charge la lecture de vidéos.")}
-                    </video>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7052580998504419328?compact=1" height="500px" width="100%" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
                 </div>
 
                 </div >
