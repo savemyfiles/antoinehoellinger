@@ -256,7 +256,7 @@ color:black !important;
 .card {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 700px;
     width: 350px;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
@@ -411,14 +411,16 @@ color:black !important;
     animation: detailsOnComing 2s forwards;
     overflow-x: hidden;
     display: flex;
+    top:0;
+    left:0;
+    width:100vw;
     flex-direction: column;
     position: fixed;
-    left: 100px;
     z-index: 900;
     padding: 0 80px;
     border-radius: 15px;
     box-shadow: -1rem 0 3rem #000;
-    height: calc(100% - 20px);
+    height: 100vh;
 }
 
     .detailsOn container, .detailsOn h1, .detailsOn h2 {
@@ -446,30 +448,33 @@ color:black !important;
 
     @keyframes detailsOnComing {
         0% {
-        top: calc(100% + 100px);
-        width: 0px;
-        overflow-y: hidden;
-    }
+            top: calc(100% + 100px);
+            width: 0vw;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
-    30% {
-        background: black;
-        top: 100px;
-        width: 0px;
-        overflow-y: hidden;
-    }
+        30% {
+            background: black;
+            top: 0px;
+            width: 0vw;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
-    60% {
-        background: black;
-        top: 100px;
-        width: calc(100% - 200px);
-        overflow-y: hidden;
-    }
+        60% {
+            background: black;
+            top: 0px;
+            overflow-y: hidden;
+            z-index: 999;
+        }
 
     100% {
         overflow-y: auto;
         background: black;
-        top: 100px;
-        width: calc(100% - 200px);
+        top: 0px;
+        width: 100vw;
+        z-index:999;
     }
 
     }
@@ -590,21 +595,29 @@ color:black !important;
 
 #it {
     background: center / contain no-repeat url('../../assets/images/pragmantic.png');
-    }
+}
 
 
 #worldtour {
-    background: center / contain no-repeat url('../../assets/images/worldtour.jpg')
+    background: center / cover no-repeat url('../../assets/images/worldtour.jpg')
 }
 
 #dreamforce {
-    background: center / contain no-repeat url('../../assets/images/dreamforce.jpg')
+    background: center / cover no-repeat url('../../assets/images/dreamforce.jpg')
 }
 
 #homepartner {
-    background: center / contain no-repeat url('../../assets/images/logoHomePartner.png')
+    background: center / cover no-repeat url('../../assets/images/logoHomePartner.png')
 }
 
 #disney {
-    background: center / contain no-repeat url('../../assets/images/disney.png')
+    background: center / cover no-repeat url('../../assets/images/disney.png')
+}
+
+#pmoint {
+    background: center / cover no-repeat url('../../assets/images/pmoint.jpeg')
+}
+
+#pmoit {
+    background: center / cover no-repeat url('../../assets/images/tech.jpg')
 }

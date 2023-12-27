@@ -6,8 +6,14 @@
     align-content:center;
 }
 
+.videoContainer {
+max-width:1000px;
+margin:auto;
+}
+
+
 .color {
-    color:#14f3db;
+    color: #14f3db;
 }
 
 .pragLink {

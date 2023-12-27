@@ -10,7 +10,7 @@ function Freelance(props) {
         return (
             <>
                 <h1>{t("Mon Experience en Start-up")}</h1>
-                <h2>{t("Stage dans un réseau de franchises national pour améliorer la visibiltié digitale")}</h2>
+                <h2>{t("Mission dans un filiale d'un grand groupe bancaire")}</h2>
             <div className="container">
                     <div className="descriptionLeft imageExp" id="it" >
                     </div>
@@ -60,7 +60,7 @@ function Freelance(props) {
                 <div className="container">
 
 
-                    <div className="descriptionRightTwo imageExp">
+                    <div className="descriptionRight imageExp">
 
                     <div className="descrText"> 
                         <h3>Salesforce Dreamforce 2021 </h3>

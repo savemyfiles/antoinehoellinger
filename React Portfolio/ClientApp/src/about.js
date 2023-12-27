@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import MySelf from './components/about/myself';
 import Education from './components/about/education'
 import Review from './components/about/review'
+import Interview from './components/about/interview'
 import './components/about/about.css'
 
 export class about extends Component {
@@ -21,8 +22,11 @@ export class about extends Component {
         
             <div className="main">
 
-                < MySelf />
-                < Review />
+                    < MySelf />
+                    < Interview />
+
+                    < Review />
+
                 < Education />
 
                 </div>
