@@ -150,6 +150,26 @@
   "Documentation du projet.": "Projet Documentation.",
   "Gestion budgétaire du projet.": "Project Financial follow-up.",
   "Formation de 450 utilisateurs.": "Training of 450 users.",
-  "Gérer la relation entre les services fonctionnels et techniques.": "Manage the relationship between functional and technical services."
+  "Gérer la relation entre les services fonctionnels et techniques.": "Manage the relationship between functional and technical services.",
+
+
+
+  "Mon Experience en Micro-finance": "My Experience in Microfinance",
+  "Préstation dans le cadre d’un déploiement Core Model ( comprenant 1 CBS, une 10ène d'applications connexes, 1 middleware, ... ) à l’international ( 9 pays ), en tant que PMO Central pour": "Service as part of a Core Model deployment (including 1 CBS, around 10 related applications, 1 middleware, ...) internationally (9 countries), as the Central PMO for",
+  "Superviser et suivre les tâches centrales visant la livraison et l'alignement avec le déploiement du Core Model dans les filiales concernées. Recueillir des données sur l'exécution des Projets.": "Supervise and monitor central tasks aimed at delivery and alignment with the deployment of the Core Model in the respective subsidiaries. Gather data on Project execution.",
+  "Maitriser le planning du programme au niveau central et faire les actualisations nécessaires pour le suivi selon les directrices de la direction.": "Master the program schedule at the central level and make necessary updates for monitoring as per the directives from the management.",
+  "Dans les instances de suivi des projets, identifier les risques, suivre les actions et les escalades et faire le lien entre les pays en processus de déploiement.": "In project tracking instances, identify risks, monitor actions and escalations, and bridge the gap between countries in deployment process.",
+  "PMO Technique": "Technical PMO",
+  "En charge de la gestion et du suivi d'un projet de migration majeur de Paas à IaaS, couvrant neuf pays et englobant plus de dix applications, un middleware, et un CBS (Core Model). De la phase de benchmark de partenaire au déploiement BUILD.": "Responsible for managing and overseeing a major migration project from PaaS to IaaS, covering nine countries and involving over ten applications, a middleware, and a CBS (Core Model). From partner benchmarking phase to BUILD deployment.",
+  "Cadrage et suivi des chantiers Infra et solutions digitales.": "Framing and monitoring Infra and digital solutions workstreams.",
+  "Cadrage et suivi des chantiers d'intégration pour la mise en place d'API.": "Framing and monitoring integration workstreams for API implementation.",
+  "Superviser et suivre les tâches": "Supervise and monitor tasks",
+  "Maitriser le planning du programme": "Master the program schedule",
+  "Dans les instances de suivi des projets, identifier les risques, suivre les actions et les escalades.": "In project tracking instances, identify risks, monitor actions and escalations.",
+
+  "Mon interview": "My interview",
+  "Dans le cadre de mes fonctions en tant qu'expert informatique et digital au sein du réseau": "As part of my role as a computer and digital expert within the network",
+  ", j'ai eu le plaisir d'être interviewé par l'équipe": ", I had the pleasure of being interviewed by the team",
+  ". L'objectif de cette interview était de comprendre le périmètre de mon activité et de partager quelques moments privilégiés. Je vous invite à découvrir la vidéo pour en savoir plus !": ". The purpose of this interview was to understand the scope of my work and share some special moments. I invite you to watch the video to learn more!"
 
 }

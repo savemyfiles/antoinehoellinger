@@ -24,7 +24,7 @@ function Interview(props) {
 
                 </div >
                 <div className="videoContainer underligned"  >
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7052580998504419328?compact=1" height="500px" width="100%" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7052580998504419328?compact=1" height="500px" width="100%" frameborder="0" allowfullscreen="" title="Antoine HOELLINGER INTERVIEW"></iframe>
                 </div>
 
                 </div >
