@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/antoinehoellinger/static/css/main.6c6921a0.css",
-    "main.js": "/antoinehoellinger/static/js/main.6519301b.js",
+    "main.css": "/antoinehoellinger/static/css/main.06e4bc20.css",
+    "main.js": "/antoinehoellinger/static/js/main.f84eae51.js",
     "static/media/antoine.jpg": "/antoinehoellinger/static/media/antoine.d0a5d4af5b15f5480337.jpg",
     "static/media/web.png": "/antoinehoellinger/static/media/web.c8eca491d9ea2d2f01b1.png",
     "static/media/worldtour.jpg": "/antoinehoellinger/static/media/worldtour.4a6e8bbf1654e1781fc8.jpg",
@@ -19,11 +19,11 @@
     "static/media/pragmantic.png": "/antoinehoellinger/static/media/pragmantic.df89f411e8f57fe64070.png",
     "static/media/IcoLogo.svg": "/antoinehoellinger/static/media/IcoLogo.5754b425b266390d3597542a5386e797.svg",
     "index.html": "/antoinehoellinger/index.html",
-    "main.6c6921a0.css.map": "/antoinehoellinger/static/css/main.6c6921a0.css.map",
-    "main.6519301b.js.map": "/antoinehoellinger/static/js/main.6519301b.js.map"
+    "main.06e4bc20.css.map": "/antoinehoellinger/static/css/main.06e4bc20.css.map",
+    "main.f84eae51.js.map": "/antoinehoellinger/static/js/main.f84eae51.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c6921a0.css",
-    "static/js/main.6519301b.js"
+    "static/css/main.06e4bc20.css",
+    "static/js/main.f84eae51.js"
   ]
 }
