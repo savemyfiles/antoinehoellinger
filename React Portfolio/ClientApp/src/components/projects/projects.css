@@ -1,0 +1,23 @@
+.project-container {
+    text-align:center;
+}
+
+.project-section-container{
+    display:flex;
+}
+
+.project-side-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .project-side-description h3 {
+        color: #14f3db !important;
+    }
+    
+    .project-side-description ul, .project-side-description li  {
+        list-style:circle;
+        padding-left:15px;
+    }
+

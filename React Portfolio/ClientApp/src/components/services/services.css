@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.skills {
+.skills { 
     display: flex;
     flex-direction: column;
     min-width: 40%;
