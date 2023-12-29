@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/antoinehoellinger/static/css/main.c8add0b6.css",
-    "main.js": "/antoinehoellinger/static/js/main.161b83d9.js",
+    "main.js": "/antoinehoellinger/static/js/main.5f07798f.js",
     "static/media/antoine.jpg": "/antoinehoellinger/static/media/antoine.d0a5d4af5b15f5480337.jpg",
     "static/media/web.png": "/antoinehoellinger/static/media/web.c8eca491d9ea2d2f01b1.png",
     "static/media/worldtour.jpg": "/antoinehoellinger/static/media/worldtour.4a6e8bbf1654e1781fc8.jpg",
@@ -20,10 +20,10 @@
     "static/media/IcoLogo.svg": "/antoinehoellinger/static/media/IcoLogo.5754b425b266390d3597542a5386e797.svg",
     "index.html": "/antoinehoellinger/index.html",
     "main.c8add0b6.css.map": "/antoinehoellinger/static/css/main.c8add0b6.css.map",
-    "main.161b83d9.js.map": "/antoinehoellinger/static/js/main.161b83d9.js.map"
+    "main.5f07798f.js.map": "/antoinehoellinger/static/js/main.5f07798f.js.map"
   },
   "entrypoints": [
     "static/css/main.c8add0b6.css",
-    "static/js/main.161b83d9.js"
+    "static/js/main.5f07798f.js"
   ]
 }
