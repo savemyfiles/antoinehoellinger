@@ -6,6 +6,8 @@
   "A propos": "About",
   "Merci": "Thanks",
   "Votre avis m'a bien été envoyé": "You're message has been sent",
+  "Mon Experience dans le milieu bancaire": "My Experience on bank project",
+  "Suite à des expériences peu satisfaisantes avec des solutions managées par des prestataires externes, l'entreprise m'a confié la mission de suivre et coordonner un projet de migration de toute son infrastructure d'hébergement vers une plateforme IaaS internalisée.": "Following unsatisfactory experiences with managed solutions by external service providers, the company entrusted me with the task of overseeing and coordinating a project to migrate its entire hosting infrastructure to an internalized IaaS platform.",
 
   "Compétences": "Skills",
   "Appétence IT": "Technical approach",
@@ -37,6 +39,7 @@
   "Mon Experience en Start-up": "My start-up experience",
 
   "Mes services": "Services",
+  "Web developpeur": "Web developer",
 
   "Suivre et communiquer sur les avancements des projets": "Project follow-up and reporting",
   "Prioriser les tâches": "Tasks prioritizing",
@@ -57,6 +60,11 @@
   "Gestion du support technique et fonctionnel": "Technical and functional support management",
   "Orchestration des montées de version": "Upgrades management",
   "Conduite du changement": "Change management",
+  "Mes projets personnels": "My personnal projects",
+  "ans": "years",
+  "Indépendant depuis": "Freelance since",
+  "Mentions légales": "Legal",
+  "Me contacter": "Contact me",
 
 
 

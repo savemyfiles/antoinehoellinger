@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import "./i18n";
 
 
@@ -18,7 +17,6 @@ ReactDOM.render(
   </BrowserRouter>,
   rootElement);
 
-registerServiceWorker();
 
 if (document.getElementById('email') != null) {
     document.getElementById('email').innerHTML = "antoine.hlgr@gmail.com".split("").reverse().join("");

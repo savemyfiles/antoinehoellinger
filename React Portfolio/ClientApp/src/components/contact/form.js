@@ -94,42 +94,42 @@ function Form(props) {
                             <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: "none" }} ></iframe>
                 </div>
 
-<div className="contact_details">
+                    <div className="contact_details">
                             <h2>{t("Coordonnées")}</h2>
 
                             <p className="subtitle_contact">{t("Vous avez un projet et vous aimeriez que l'on en discute ? N'hésitez plus, contactez-moi !")} </p>
 
-
-                    <ul>
-                            <li> < FaUserTie className='IconContact'/>
-                            <div className="contact_description">
-                                <h3>{t("Nom")}</h3>
-                                <p>Antoine HOELLINGER</p>
-                            </div>
-                        </li>
-
-                            <li> <FaCity className='IconContact'/>
-                                <div className="contact_description">
-                                <h3>{t("Ville")}</h3>
-                                <p>Paris - Toulouse - Lyon ( France ) | Remote</p>
-                            </div>
-                        </li>
-
-                            <li> < FaPhoneAlt className='IconContact'/>
-                                <div className="contact_description">
-                                <h3>{t("Téléphone")}</h3>
-                                <p id="phone"></p>
-                              </div>
-                                    </li>
-
-                            <li> < FaEnvelopeOpenText className='IconContact'/>
-                                <div className="contact_description">
+                            <table className='table-contact'>
+                                <tr className="contact_description">
+                                    <th className='col1-contact'><  FaUserTie className='IconContact' /></th>
+                                    <th className='col2-contact'>
+                                        <h3>{t("Nom")}</h3>
+                                        <p>Antoine HOELLINGER</p>
+                                    </th>
+                                </tr>
+                                <tr className="contact_description">
+                                    <th className='col1-contact'><  FaCity className='IconContact' /></th>
+                                    <th className='col2-contact'>
+                                        <h3>{t("Ville")}</h3>
+                                        <p> Barcelone - Paris | Remote</p>
+                                    </th>
+                                </tr>
+                                <tr className="contact_description">
+                                    <th className='col1-contact' ><  FaPhoneAlt className='IconContact' /></th>
+                                    <th className='col2-contact'>
+                                        <h3>{t("Téléphone")}</h3>
+                                        <a href='callto:0663794613' id="phone">+33 6 63 79 46 13</a>
+                                    </th>
+                                        </tr>
+                                <tr className="contact_description">
+                                    <th className='col1-contact'><  FaEnvelopeOpenText className='IconContact' /></th>
+                                    <th className='col2-contact'>
                                         <h3>E-mail</h3>
-                                        <p id="email" className="off"></p>
-                              </div>
-                                    </li>
+                                        <a href='mailto:antoine.hlgr@gmail.com' id="email" >antoine.hlgr@gmail.com</a>
+                                    </th>
+                                </tr>
+                            </table>
 
-                                </ul>
                                 </div>
                                                                     
                 </div>

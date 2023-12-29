@@ -37,10 +37,11 @@ function MySelf(props) {
                                                     <div className="aboutContainerDescription">
                                 <p> <span className="color"><strong>{t("Nom")}</strong></span> : Antoine HOELLINGER</p>
                                 < p > <span className="color"><strong>{t("Diplôme")}</strong></span> : Master 2</p>
+                                < p > <span className="color"><strong>{t("Indépendant depuis")}</strong></span> : {new Date().getFullYear() - 2020} {t("ans")}</p>
                                                          </div>
                                            <div className="aboutContainerDescription">
-                                                        <p> <span className="color"><strong>Age</strong></span> : 21</p>
-                                                           <p> <span className="color"><strong>{t("Localisation")}</strong></span> : Paris (FR) | Remote </p>
+                                <p> <span className="color"><strong>Age</strong></span> : {new Date().getFullYear() - 1996}</p>
+                                                           <p> <span className="color"><strong>{t("Localisation")}</strong></span> : Paris (FR) - Barcelone (ES) | Remote </p>
                                                          </div>
                                                          
                                                          </div>

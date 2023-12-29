@@ -6,14 +6,6 @@ function Startup() {
     const { t, i18n } = useTranslation();
 
 
-        const styles = {
-            containerStyle: {
-                backgroundImage: 'url("https://via.placeholder.com/500")',
-            }
-        };
-
-        const { containerStyle } = styles;
-
         return (
             <>
                 <h1>{t("Mon Experience en Start-up")}</h1>

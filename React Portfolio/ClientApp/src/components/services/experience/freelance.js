@@ -9,7 +9,7 @@ function Freelance(props) {
 
         return (
             <>
-                <h1>{t("Mon Experience en Start-up")}</h1>
+                <h1>{t("Mon Experience dans le milieu bancaire")}</h1>
                 <h2>{t("Mission dans un filiale d'un grand groupe bancaire")}</h2>
             <div className="container">
                     <div className="descriptionLeft imageExp" id="it" >

@@ -1,11 +1,11 @@
 ﻿import React from "react"
-import Salesforce from '../../assets/salesforce.png';
-import Excel from '../../assets/excel.png';
-import Jira from '../../assets/jira.png';
-import PowerBi from '../../assets/powerbi.png';
-import Tableau from '../../assets/tableau.png';
-import Web from '../../assets/web.png';
-import Zendesk from '../../assets/zendesk.png';
+import Salesforce from '../../../assets/salesforce.png';
+import Excel from '../../../assets/excel.png';
+import Jira from '../../../assets/jira.png';
+import PowerBi from '../../../assets/powerbi.png';
+import Tableau from '../../../assets/tableau.png';
+import Web from '../../../assets/web.png';
+import Zendesk from '../../../assets/zendesk.png';
 import { useTranslation } from "react-i18next";
 
 

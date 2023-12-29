@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
 import { Sling as Hamburger } from 'hamburger-react';
-import Logo from './assets/images/IcoLogo.svg'
+import Logo from '../../assets/images/IcoLogo.svg'
 import { useTranslation } from "react-i18next";
 import { FaLanguage } from 'react-icons/fa';
 

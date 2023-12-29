@@ -65,12 +65,12 @@ font-size:16px;
 @keyframes menuOpen {
     from {
         opacity: 0;
-        margin-top: calc(100% - 299px);
-            }
+        transform: translateY(-200px);
+    }
 
     to {
         opacity: 1;
-        margin-top: 0px;
+        transform: translateY(0px);
     }
 }
 
@@ -103,11 +103,12 @@ font-size:16px;
     position: fixed; /* Stay in place */
     z-index: 998; /* Sit on top */
     right: -10px;
-    top: 140px;
+    top: 100px;
     display:flex;
     flex-direction:column;
     align-items:flex-end;
     padding: 0 10%;
+    max-height: calc( 100vh - 114px)
 }
 
 .overlay ul {
@@ -126,29 +127,32 @@ font-size:16px;
         align-items: center;
     }
 
-.overlay ul li a:hover p {
-    animation: .5s textMenuOn forwards;
-}
-
         .overlay ul li a:hover .IconBack {
             transform: rotate(10deg);
             color: white;
         }
 
-        .overlay ul li a p {
-            transform: translateX(120px);
-            opacity: 0;
-            padding: 5px 20px;
-            background: #14f3db;
-            color:white;
-            border-radius: 15px;
-            width: 150px;
-            text-align: center
+        .overlay ul li a:hover .textMenu {
+            animation: .5s textMenuOn forwards;
         }
 
-@keyframes textMenuOn  {
+.textMenu {
+    opacity: 0;
+    padding: 5px 20px;
+    background: #14f3db;
+    color: white;
+    border-radius: 15px;
+    width:max-content;
+    text-align: center;
+}
+
+.textMenu, .IconBack {
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes textMenuOn {
     from {
-        transform: translateX(120px);
+        transform: translateX(200px);
         opacity: 0;
     }
 
@@ -158,9 +162,6 @@ font-size:16px;
     }
 }
 
-.overlayon {
-    animation: on 1s forwards;
-}
 
 .nav-links {
     color: black;
@@ -195,14 +196,6 @@ font-size:16px;
         border-radius: 15px;
     }
 
-@keyframes come {
-    from {
-        width: 0px;
-    }
-
-    to {
-    }
-}
 
 @keyframes bar {
     from {

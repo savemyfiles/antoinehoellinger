@@ -33,6 +33,7 @@ function Finance(props) {
 
                         <div className="descriptionRight">
                             <h2>{t("PMO Technique")}</h2>
+                        <p>{t("Suite à des expériences peu satisfaisantes avec des solutions managées par des prestataires externes, l'entreprise m'a confié la mission de suivre et coordonner un projet de migration de toute son infrastructure d'hébergement vers une plateforme IaaS internalisée.")} :</p>
 
                             <ul>
                             <li>{t("En charge de la gestion et du suivi d'un projet de migration majeur de Paas à IaaS, couvrant neuf pays et englobant plus de dix applications, un middleware, et un CBS (Core Model). De la phase de benchmark de partenaire au déploiement BUILD.")}</li>

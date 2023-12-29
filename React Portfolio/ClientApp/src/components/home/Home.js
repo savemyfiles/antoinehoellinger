@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import HomeContent from "./components/HomeContent";
+import HomeContent from "./HomeContent";
 import './Home.css';
-import ParticleLogo from './components/particleLogo';
+import ParticleLogo from './particleLogo';
 import { Helmet } from 'react-helmet';
 
 

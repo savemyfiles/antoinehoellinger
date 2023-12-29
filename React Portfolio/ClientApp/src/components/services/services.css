@@ -526,13 +526,11 @@ color:black !important;
 
 
 .imageExp {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    min-width: 300px;
-    max-width: 400px;
-    display: flex;
-    height: 400px;
+    display: block;
+    max-width:400px;
+    height: 300px;
+    object-fit: cover;
 }
 
 
@@ -616,11 +614,11 @@ color:black !important;
 }
 
 #homepartner {
-    background: center / cover no-repeat url('../../assets/images/logoHomePartner.png')
+    background: center / contain no-repeat url('../../assets/images/logoHomePartner.png')
 }
 
 #disney {
-    background: center / cover no-repeat url('../../assets/images/disney.png')
+    background: center / contain no-repeat url('../../assets/images/disney.png')
 }
 
 #pmoint {
@@ -632,9 +630,9 @@ color:black !important;
 }
 
 #pmoint {
-    background: center / contain no-repeat url('../../assets/images/pmoint.jpeg')
+    background: center / cover no-repeat url('../../assets/images/pmoint.jpeg')
 }
 
 #pmoit {
-    background: center / contain no-repeat url('../../assets/images/tech.jpg')
+    background: center / cover no-repeat url('../../assets/images/tech.jpg')
 }

@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
-import NavMenu from './NavMenu';
+import NavMenu from './components/nav/NavMenu';
 import Footer from './components/Footer';
-import Nav from './components/nav'
+import Nav from './components/nav/nav'
 
 
 

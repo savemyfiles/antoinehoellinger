@@ -2,21 +2,19 @@
 import './Footer.css';
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 
+const Footer = () => {
 
-
-export class Footer extends Component {
-    static displayName = Footer.name;
-
-    render() {
+    const { t, i18n } = useTranslation();
 
     return (
         <footer className="">
             <ul className="footerInfo">
                 <li><p>© 2022 Antoine HOELLINGER</p></li>
-                <li> <Link tag={Link} to="/legal">Mentions légales</Link></li>
-                <li><Link tag={Link} to="/contact">Me contacter</Link></li>
+                <li> <Link tag={Link} to="/legal">{t('Mentions légales')}</Link></li>
+                <li><Link tag={Link} to="/contact">{t('Me contacter')} </Link></li>
 
             </ul>
 
@@ -28,7 +26,6 @@ export class Footer extends Component {
      
         </footer>
         );
-    }
 }
 
 export default Footer;

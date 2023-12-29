@@ -1,11 +1,11 @@
 ﻿import React, {useState} from "react"
 import { FaBuilding, FaLuggageCart, FaLandmark, FaTimes } from 'react-icons/fa';
-import Finance from './experience/finance'
-import Freelance from './experience/freelance'
-import Startup from "./experience/startup";
-import Tourism from "./experience/tourism";
+import Finance from '../experience/finance'
+import Freelance from '../experience/freelance'
+import Startup from "../experience/startup";
+import Tourism from "../experience/tourism";
 import { useTranslation } from "react-i18next";
-
+import { FaEarthAfrica } from "react-icons/fa6";
 
 function Experience(props) {
 
@@ -73,7 +73,7 @@ function Experience(props) {
                     </div>
 
                     <div className="card" onClick={() => { setDisplay(< Finance  />) }}>
-                        < FaLandmark className="servicesIcons" />
+                        < FaEarthAfrica className="servicesIcons" />
                         <h3>{t("Finance")}</h3>
                         <h4>2022 - {t("Aujourd'hui")}</h4>
                         <div className="bar">
