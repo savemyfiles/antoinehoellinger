@@ -63,7 +63,9 @@ const NavMenu = (props) => {
 
             return (
 
-      <header>
+                <header>
+                   
+                    {isOpen && <div className="blur-background"></div>}
         <div id="navbar" className="navbar">
                 <ul className="logo">
                             <li> <Link tag={Link} to="/"> <img alt="Logo Antoine HOELLINGER"src={Logo}/> </Link></li>

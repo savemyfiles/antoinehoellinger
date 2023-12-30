@@ -43,6 +43,7 @@ font-size:16px;
     padding: 15px;
     z-index:99;
     border-radius: 50%;
+    display:flex;
 }
 
 .Icon {
@@ -98,7 +99,14 @@ font-size:16px;
     }
 }
 
-
+.blur-background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    backdrop-filter: blur(8px); /* Effet de flou */
+    z-index: 50;
+}
 
 .overlay {
     height: auto;
@@ -106,11 +114,12 @@ font-size:16px;
     z-index: 998; /* Sit on top */
     right: -10px;
     top: 100px;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding: 0 10%;
-    max-height: calc( 100vh - 114px)
+    max-height: calc( 100vh - 114px);
+    z-index:1000;
 }
 
 .overlay ul {
@@ -223,12 +232,12 @@ font-size:16px;
 
     .IconBack {
         background: #14f3db;
-        padding: 10px;
+        padding: 13px;
         border-radius: 50%;
     }
 
     .Icon {
-        font-size: 110%;
+        font-size: 150%;
     }
 
 }
