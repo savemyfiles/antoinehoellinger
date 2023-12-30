@@ -1,5 +1,5 @@
 ﻿import React, { useEffect, useState } from "react"
-import Salesforce from '../../../assets/salesforce.png';
+import Image from '../../../assets/images/logowhite.png';
 import { useTranslation } from "react-i18next";
 import moment from "moment";
 
@@ -27,6 +27,15 @@ function Invoices(props) {
         fetchReleaseData();
     }, []);
 
+    const backgroundImageStyle = {
+        height: '500px',
+        backgroundImage: `url(${Image})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: ' no-repeat',
+        backgroundPosition: 'center',
+    };
+
+
     return (
         <section>
             <div className="title">
@@ -37,13 +46,10 @@ function Invoices(props) {
 
             <div className='project-container'>
 
-                <div className='project-section-container'>
-
-                    <div>
-                        <img style={{maxWidth: '500px'}}  src={Salesforce} />
+                <div className='image-container'>
+                        <div style={backgroundImageStyle}></div>
                     </div>
 
-                <div style={{ textAlign: 'left' }}>
 
                     <div className='project-side-description'>
                         <h3>{t("Information sur le projet")}</h3>
@@ -68,8 +74,10 @@ function Invoices(props) {
                                     <li>{t("Dernière mise à jour")} : {moment(invoices.updated_at).format('DD MMMM YYYY')}</li>
                                 </ul>
 
+                                <div className="button-container">
                                 {!invoices.private && <a className="button" href={invoices.html_url}>{t("Voir sur")} GitHub</a>}
-
+                            {!invoices.private && <a className="button" href='https://antoine-hoellinger.cloud/'>{t("Voir")} Online</a>}
+                                </div>
                             </div>
 
                     </div>
@@ -77,10 +85,8 @@ function Invoices(props) {
                 
 
                </div>
-               </div>
 
 
-            </div>
 
 
         </section>

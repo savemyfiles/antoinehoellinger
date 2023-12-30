@@ -41,6 +41,7 @@ font-size:16px;
 .IconBack {
     background: #14f3db;
     padding: 15px;
+    z-index:99;
     border-radius: 50%;
 }
 
@@ -60,6 +61,7 @@ font-size:16px;
 
 .menuOpen {
     animation: menuOpen 1s forwards;
+    z-index: 99;
 }
 
 @keyframes menuOpen {
@@ -213,6 +215,22 @@ font-size:16px;
   html {
     font-size: 16px;
   }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .IconBack {
+        background: #14f3db;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .Icon {
+        font-size: 110%;
+    }
+
 }
 
 .box-shadow {

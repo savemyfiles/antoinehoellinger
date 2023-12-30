@@ -223,6 +223,12 @@ color:black !important;
         }
 
 
+.button-container{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
 .servicesIcons {
     font-size: 380%;
     color: #14f3db;

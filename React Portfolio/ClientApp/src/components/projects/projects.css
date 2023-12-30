@@ -1,23 +1,40 @@
 .project-container {
-    text-align:center;
+    display: flex;
+    gap: 20px;
 }
 
-.project-section-container{
-    display:flex;
-}
 
 .project-side-description {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: left;
+    flex: 1;
 }
 
-    .project-side-description h3 {
-        color: #14f3db !important;
-    }
+.image-container {
+width:100%;
+max-width:500px;
+}
+
+
+.project-side-description h3 {
+    color: #14f3db !important;
+}
     
     .project-side-description ul, .project-side-description li  {
         list-style:circle;
         padding-left:15px;
     }
 
+
+@media only screen and (max-width: 800px ) {
+    .project-container {
+        flex-wrap:wrap;
+    }
+
+    .image-container {
+        max-width: unset;
+    }
+
+}
