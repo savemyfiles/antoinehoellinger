@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /React Portfolio/ClientApp/public/videos/interview-antoine.mp4
+/React Portfolio/ClientApp/.env
+/React Portfolio/ClientApp/.env
