@@ -14,7 +14,7 @@ function Invoices(props) {
             try {
                 const response = await fetch('https://api.github.com/repos/savemyfiles/antoine-hoellinger.cloud', {
                     headers: {
-                        Authorization: 'token  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 ',
+                        Authorization: 'token  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',
                     },
                 });
                 const data = await response.json();
@@ -34,7 +34,6 @@ function Invoices(props) {
         backgroundRepeat: ' no-repeat',
         backgroundPosition: 'center',
     };
-
 
     return (
         <section>
@@ -65,20 +64,20 @@ function Invoices(props) {
                             <p>{t("Mon application offre une interface intuitive pour créer des factures professionnelles en quelques étapes simples. Elle permet également de gérer plusieurs entreprises depuis une même plateforme, garantissant un suivi précis des paiements et une organisation optimale. Le stockage sécurisé des factures offre un accès immédiat à toute donnée importante, à tout moment.Connectivité ClientUn aspect essentiel de cette application est sa capacité à établir des liens directs avec les clients. Elle facilite un suivi transparent des factures, favorisant ainsi des échanges fluides et une meilleure communication pour un service client de qualité.L'Engagement envers la SimplicitéMon objectif principal était de créer une solution facile à utiliser et personnalisable selon les besoins spécifiques de chaque utilisateur. L'application s'adapte à l'identité de l'entreprise, offrant ainsi une expérience fluide et intuitive.")} </p>
                             </div>
 
-                            <div>
-                                <h3>{t("Information Github")}</h3>
-                                <ul style={{ color: 'white' }}>
-                                    <li>{t("Nom du projet")} : {invoices.name}</li>
-                                    <li>{t("Language utilisé")} : {invoices.language}</li>
-                                    <li>{t("Date de création")} : {moment(invoices.pushed_at).format('DD MMMM YYYY')}</li>
-                                    <li>{t("Dernière mise à jour")} : {moment(invoices.updated_at).format('DD MMMM YYYY')}</li>
-                                </ul>
+                    {invoices && <div>
+                        <h3>{t("Information Github")}</h3>
+                        <ul style={{ color: 'white' }}>
+                            <li>{t("Nom du projet")} : {invoices.name}</li>
+                            <li>{t("Principal language utilisé")} : {invoices.language}</li>
+                            <li>{t("Date de création")} : {moment(invoices.pushed_at).format('DD MMMM YYYY')}</li>
+                            <li>{t("Dernière mise à jour")} : {moment(invoices.updated_at).format('DD MMMM YYYY')}</li>
+                        </ul>
 
-                                <div className="button-container">
-                                {!invoices.private && <a className="button" href={invoices.html_url}>{t("Voir sur")} GitHub</a>}
-                            {!invoices.private && <a className="button" href='https://antoine-hoellinger.cloud/'>{t("Voir")} Online</a>}
-                                </div>
-                            </div>
+                        <div className="button-container">
+                            {invoices.private ? "" :  <a className="button" href={invoices.html_url}>{t("Voir sur")} GitHub</a>}
+                            <a className="button" href='https://antoine-hoellinger.cloud/'>{t("Voir")} Online</a>
+                        </div>
+                    </div>}
 
                     </div>
 

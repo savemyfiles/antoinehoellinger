@@ -4,11 +4,31 @@ import './legal.css';
 
 
 
-
 export class legal extends Component {
     static displayName = legal.name;
 
+    constructor(props) {
+        super(props);
+
+        // Initialisation de l'état
+        this.state = {
+            phone: '',
+            mail: '',
+        };
+    }
+
+    handlePhoneClick = () => {
+        this.setState({ phone: '+33 6 63 79 46 13' });
+    };
+
+    // Méthode pour mettre à jour l'état lorsque le courriel est cliqué
+    handleMailClick = () => {
+        this.setState({ mail: 'antoine.hlgr@gmail.com' });
+    };
+
     render() {
+
+        const { phone, mail } = this.state;
         return (
             <div className="main">
 
@@ -35,9 +55,9 @@ export class legal extends Component {
                     <p> Pour tout type d'information, vous pouvez me contacter par :</p>
                     <ul>
                         <li> Lieu : Paris  </li>
-                        <li> N° de téléphone : <p id="showPhone"> Cliquer pour voir </p> <p id="phone" className="off"></p></li>
-                            <li> Adresse e-mail : <p id="showEmail"> Cliquer pour voir </p> <p id="email" className="off"></p></li>
-                                 </ul>
+                        <li>N° de téléphone : <p style={{cursor:'pointer'}} onClick={this.handlePhoneClick}>{phone ? phone : 'click to see'}</p></li>
+                        <li>Adresse e-mail : <p style={{ cursor: 'pointer' }} onClick={this.handleMailClick}>{mail ? mail : 'click to see'}</p></li>
+                    </ul>
                                     </div>
 
                             <div className="legal">

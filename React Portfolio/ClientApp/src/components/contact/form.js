@@ -17,10 +17,14 @@ function Form(props) {
     const [error, setError] = useState('')
     const [form, setForm] = useState(true)
 
+    const [myPhone, setMyPhone] = useState(null)
+    const [myEmail, setMyEmail] = useState(null)
+
+
+
     const handleSubmit = event => {
         setForm(false);
     };
-
 
 
         return (
@@ -118,15 +122,23 @@ function Form(props) {
                                     <th className='col1-contact' ><  FaPhoneAlt className='IconContact' /></th>
                                     <th className='col2-contact'>
                                         <h3>{t("Téléphone")}</h3>
-                                        <a href='callto:0663794613' id="phone">+33 6 63 79 46 13</a>
+                                        {myPhone ?
+                                            <a href='callto:0663794613' style={{ pointer: 'cursor' }}>{myPhone}</a>
+                                            :
+                                            <p style={{ cursor: 'pointer' }} onClick={() => { setMyPhone('+33 6 63 79 46 13') }}>Click to see</p>
+                                        }
                                     </th>
                                         </tr>
                                 <tr className="contact_description">
                                     <th className='col1-contact'><  FaEnvelopeOpenText className='IconContact' /></th>
                                     <th className='col2-contact'>
-                                        <h3>E-mail</h3>
-                                        <a href='mailto:antoine.hlgr@gmail.com' id="email" >antoine.hlgr@gmail.com</a>
-                                    </th>
+                                        <h3>{t("E-mail")}</h3>
+                                        {myEmail ? 
+                                        <a href='mailto:antoine.hlgr@gmail.com' style={{ pointer: 'cursor' }}>{myEmail}</a>
+                                            :
+                                            <p style={{ cursor: 'pointer' }} onClick={() => { setMyEmail('antoine.hlgr@gmail.com') }}>Click to see</p>
+                                         }
+                                          </th>
                                 </tr>
                             </table>
 
