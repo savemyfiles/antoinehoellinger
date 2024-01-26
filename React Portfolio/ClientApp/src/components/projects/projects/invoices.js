@@ -14,7 +14,7 @@ function Invoices(props) {
             try {
                 const response = await fetch('https://api.github.com/repos/savemyfiles/antoine-hoellinger.cloud', {
                     headers: {
-                        Authorization: 'token  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',
+                        Authorization: 'token  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',
                     },
                 });
                 const data = await response.json();
