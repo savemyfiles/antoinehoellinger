@@ -5,16 +5,15 @@ import moment from "moment";
 
 
 function Invoices(props) {
-
     const { t, i18n } = useTranslation();
-    const [invoices, setInvoices] = useState({})
+    const [invoices, setInvoices] = useState(false)
 
     useEffect(() => {
         const fetchReleaseData = async () => {
             try {
                 const response = await fetch('https://api.github.com/repos/savemyfiles/antoine-hoellinger.cloud', {
                     headers: {
-                        Authorization: 'token  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',
+                        Authorization: `token  ${process.env.REACT_APP_GH_READ_TOKEN}`,
                     },
                 });
                 const data = await response.json();
@@ -67,15 +66,15 @@ function Invoices(props) {
                     {invoices && <div>
                         <h3>{t("Information Github")}</h3>
                         <ul style={{ color: 'white' }}>
-                            <li>{t("Nom du projet")} : {invoices.name}</li>
-                            <li>{t("Principal language utilisé")} : {invoices.language}</li>
-                            <li>{t("Date de création")} : {moment(invoices.pushed_at).format('DD MMMM YYYY')}</li>
-                            <li>{t("Dernière mise à jour")} : {moment(invoices.updated_at).format('DD MMMM YYYY')}</li>
+                            <li>{t("Nom du projet")} : {invoices.name || 'Easy Invoice'}</li>
+                            <li>{t("Principal language utilisé")} : {invoices.language || 'React, Node ( JS ) & NGINX (HTTP)'}</li>
+                            <li>{t("Date de création")} : {moment(invoices.pushed_at || '01/12/2023').format('DD / MM / YYYY')}</li>
+                            {invoices.updated_at && <li>{t("Dernière mise à jour")} : {moment(invoices.updated_at).format('DD / MM / YYYY')}</li>}
                         </ul>
 
                         <div className="button-container">
-                            {invoices.private ? "" :  <a className="button" href={invoices.html_url}>{t("Voir sur")} GitHub</a>}
-                            <a className="button" href='https://antoine-hoellinger.cloud/'>{t("Voir")} Online</a>
+                            {(invoices.private === false) ? <a className="button" href={invoices.html_url}>{t("Voir sur")} GitHub</a> : ""}
+                            <a className="button" target="_blank" href='https://antoine-hoellinger.cloud/'>{t("Voir")} Online</a>
                         </div>
                     </div>}
 
