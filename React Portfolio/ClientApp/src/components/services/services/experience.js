@@ -20,7 +20,7 @@ function Experience(props) {
                     <div className={display ? "detailsOn" : "detailsOff"}>
                         <div className="Exit" onClick={() => { setDisplay() }}>< FaTimes /></div>
 
-                        <div style={{ display: display ? 'block' : 'none' }}>
+                        <div className='exp-details-container' style={{ display: display ? 'flex' : 'none' }}>
                             {display}
                         </div>
                     </div>

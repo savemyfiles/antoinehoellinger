@@ -40,7 +40,7 @@ function Freelance(props) {
                 </div>
                     </div>
 
-            <div className="container">
+            <div className="container   ">
 
                 <div className="descriptionRightTwo">
                         <h2>{t("J'y étais")} !</h2>

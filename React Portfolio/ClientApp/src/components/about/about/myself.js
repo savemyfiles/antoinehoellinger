@@ -48,7 +48,7 @@ function MySelf(props) {
 
                                             <div >
                                                                    <ul className="aboutButton"> 
-                                                                     <li><button className="aboutBtn">{t("Télécharger mon CV")}</button></li>
+                                <li><button className="button aboutBtn">{t("Télécharger mon CV")}</button></li>
                                                                       <div className="aboutSocial">
                                                                           <li><a href="https://www.linkedin.com/in/antoine-hoellinger/"><FaLinkedin className="SocialIcon"/></a></li>
                                                                           <li><a href="https://www.facebook.com/profile.php?id=100000294139004"><FaFacebook className="SocialIcon" /></a></li>

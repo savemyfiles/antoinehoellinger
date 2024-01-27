@@ -116,14 +116,23 @@ height:auto;
         width: 80px;
     }
 
+.aboutButton li {
+    justify-content:center;
+    display:flex;
+    align-content:center;
+    align-items:center;
+}
 .aboutButton ul {
     font-size: 150%;
     align-self: center;
 }
 
 .aboutBtn {
-    padding: 10px 40px;
-    border-radius: 20px;
+    margin: 0 !important;
+    color: white;
+    border: none;
+    font: inherit;
+    outline: inherit;
 }
 
 .aboutBtn:hover {

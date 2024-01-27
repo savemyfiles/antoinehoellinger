@@ -197,6 +197,10 @@ color:black !important;
     gap: 30px;
 }
 
+.exp-details-container {
+    flex-direction:column;
+    gap:100px;
+}
 
 .ServiceItems {
     display: flex;
@@ -420,13 +424,13 @@ color:black !important;
     animation: detailsOnComing 2s forwards;
     overflow-x: hidden;
     display: flex;
-    top:0;
-    left:0;
-    width:100vw;
+    top: 0;
+    left: 0;
+    width: 100vw;
     flex-direction: column;
     position: fixed;
     z-index: 900;
-    padding: 0 80px;
+    padding: 20px 80px;
     border-radius: 15px;
     box-shadow: -1rem 0 3rem #000;
     height: 100vh;
@@ -494,15 +498,21 @@ color:black !important;
 }
 
 .Exit {
-    position:sticky;
-    margin-left:100%;
+    position:relative;
+    display:flex;
+    justify-content:flex-end;
+    height:60px;
     font-size:200%;
     cursor:pointer;
-    top:20px;
-    width: 32px;
+    width: 100%;
     color:white;
+    margin-bottom:40px;
     z-index:99;
     animation : ExitOn forwards 1.5s;
+}
+
+.Exit svg{
+    position:fixed;
 }
 
 @keyframes ExitOn {
@@ -597,9 +607,9 @@ color:black !important;
 }
 
 
-    .descriptionRightTwo li, .descriptionRightTwo p {
-        font-size: 20px;
-    }
+.detailsOn li, .detailsOn p {
+    font-size: 18px;
+}
 
 
 .descriptionRightTwo li {

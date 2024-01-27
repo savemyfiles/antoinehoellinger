@@ -28,7 +28,7 @@ function Finance(props) {
                 </div>
                 </div>
 
-                <div className="container">
+                <div className="container container-reverse">
 
 
                         <div className="descriptionRight">

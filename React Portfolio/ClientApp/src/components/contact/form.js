@@ -125,7 +125,7 @@ function Form(props) {
                                         {myPhone ?
                                             <a href='callto:0663794613' style={{ pointer: 'cursor' }}>{myPhone}</a>
                                             :
-                                            <p style={{ cursor: 'pointer' }} onClick={() => { setMyPhone('+33 6 63 79 46 13') }}>Click to see</p>
+                                            <a style={{ cursor: 'pointer' }} onClick={() => { setMyPhone('+33 6 63 79 46 13') }}>Click to see</a>
                                         }
                                     </th>
                                         </tr>
@@ -136,7 +136,7 @@ function Form(props) {
                                         {myEmail ? 
                                         <a href='mailto:antoine.hlgr@gmail.com' style={{ pointer: 'cursor' }}>{myEmail}</a>
                                             :
-                                            <p style={{ cursor: 'pointer' }} onClick={() => { setMyEmail('antoine.hlgr@gmail.com') }}>Click to see</p>
+                                            <a style={{ cursor: 'pointer' }} onClick={() => { setMyEmail('antoine.hlgr@gmail.com') }}>Click to see</a>
                                          }
                                           </th>
                                 </tr>

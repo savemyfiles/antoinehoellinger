@@ -23,11 +23,10 @@ function  HomeContent() {
                         <div className="hero_textcontainer ">
                             <h2>Services</h2>
                         <ul className="dropping-texts">
-                                <li>{t('Specialiste Digital')}</li>
-                                <li>{t('MOA')}</li>
-                                <li>{t('PMO')}</li>
-                                <li>{t('Développeur web')}</li>
-
+                                <h2>{t('Specialiste Digital')}</h2>
+                                <h2>{t('MOA')}</h2>
+                                <h2>{t('PMO')}</h2>
+                                <h2>{t('Développeur web')}</h2>
                                 </ul>
                         </div>
                         </li>

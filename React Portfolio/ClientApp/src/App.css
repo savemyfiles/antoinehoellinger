@@ -158,6 +158,11 @@ input:focus {
 
 @media only screen and (max-width: 850px ) {
 
+    .button {
+        padding: 10px 20px;
+    }
+
+
     .imageExp {
         min-width: unset;
     }
@@ -203,27 +208,43 @@ input:focus {
         font-size: 15px;
     }
 
+    .detailsOn {
+        padding: 20px;
+    }
 
+        .detailsOn  ul{
+            text-align: left;
+        }
+        
+        .detailsOn  ul li{
+            padding: 8px 0px;
+        }
 
         .detailsOn h1 {
-            font-size: 40px !important;
+            font-size: 30px !important;
+            padding:0;
         }
 
-        .detailsOn h2 {
-            font-size: 20px !important;
-        }
+            .detailsOn h2 {
+                font-size: 25px !important;
+                padding: 0px 0px 40px 0px;
+                text-transform: uppercase;
+                color: #14f3db;
+            }
 
-
-
-    .Exit {
-        position: absolute;
-        right:20px;
+    .descrText {
+        align-items:center;
     }
+
+    .container-reverse {
+        flex-direction: column-reverse;
+    }
+
 
     .container {
         flex-wrap:wrap;
         text-align:center;
-        padding:100px 0px;
+        padding:0;
     }
 
     .descriptionRightTwo a, .descriptionRight a, .imageExp {
